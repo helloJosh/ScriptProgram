@@ -61,32 +61,36 @@
     <meta property="fb:app_id" content="53177223193">
     <meta property="fb:pages" content="10606591490">
       <script type="application/ld+json">
-        [{"@context":"http://schema.org","@type":"Organization","name":"Time","url":"http://time.com","logo":{"@type":"ImageObject","url":"http://time.com/img/logo.png","width":210,"height":60},"sameAs":["https://www.facebook.com/time","https://www.instagram.com/time/?hl=en","https://twitter.com/time","http://www.pinterest.com/timemagazine"]},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://time.com","name":"","image":null}}]}]
+        [{"@context":"http://schema.org","@type":"Organization","name":"Time","url":"http://time.com","logo":{"@type":"ImageObject","url":"http://time.com/img/logo.png","width":210,"height":60},"sameAs":["https://www.facebook.com/SportsIllustrated","https://twitter.com/SInow","https://www.pinterest.com/","https://www.instagram.com/sportsillustrated"]},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://time.com","name":"","image":null}}]}]
       </script>
     
     <script id="karma-loader">
-    window.useKarma = true; // Temporary flag while toggle between KARMA/TGX is in place.
-    window.karma = window.karma || {};
-    window.karma.config = {
-      apiVersion: 3,
-      isMobile: !!window.navigator.userAgent.match(/Mobi/) && !window.navigator.userAgent.match(/iPad/),
-      targeting: {
-        ch: "homepage",
-        sch: "",
-        ctype: "homepage",
-        mm: "1",
-        tags: ["smartliving"],
-        aid: 5232653,
-        cid: 5232653,
-        id:'5232653',
-        // TODO: map legacy Time page types to KARMA page types (less important because KARMA can do the mapping)
-        type: 'homepage',
-        channel: 'homepage',
-      },
-    };
-    window.karma.config.callback = window.karma.config.callback || [];
+    !function(a,e){
+      var isMobile = !!window.navigator.userAgent.match(/Mobi/) && !window.navigator.userAgent.match(/iPad/);
+      a.useKarma = true; // Temporary flag while toggle between KARMA/TGX is in place.
+      a.karma = window.karma || {};
+      a.karma.config = {
+        apiVersion: 3,
+        isMobile: isMobile,
+        site: 'tim.mdp.' + (isMobile ? 'mob' : 'com'),
+        targeting: {
+          ch: "homepage",
+          sch: "",
+          ctype: "homepage",
+          mm: "1",
+          tags: ["smartliving"],
+          aid: 5232653,
+          cid: 5232653,
+          id:'5232653',
+          // TODO: map legacy Time page types to KARMA page types (less important because KARMA can do the mapping)
+          type: 'homepage',
+              channel: 'homepage',
+        },
+      };
+      window.karma.config.callback = window.karma.config.callback || [];
     
-    !function(a,e){function r(){if(a.karma.vars=a.karma.vars||{},!(a.karma.vars.kismetReported||null!==e.querySelector('img[src$="kismet/spacer.png"]'))){a.karma.vars.kismetReported=!0;var r=e.createElement("img");r.src="/kismet/spacer.png",e.body.appendChild(r)}}a.karma.cmd=a.karma.cmd||[],a.karma.config.go=function(){a.karma.cmd.push("go")};var t=e.createElement("script");t.src="https://karma.mdpcdn.com/service/js-min/karma.js",t.onload=t.onreadystatechange=function(){var a=this.readyState;a&&"complete"!=a&&"loaded"!=a&&r()},t.onerror=r;var m=e.getElementsByTagName("script")[0];m.parentNode.insertBefore(t,m)}(window,document);
+      function r(){if(a.karma.vars=a.karma.vars||{},!(a.karma.vars.kismetReported||null!==e.querySelector('img[src$="kismet/spacer.png"]'))){a.karma.vars.kismetReported=!0;var r=e.createElement("img");r.src="/kismet/spacer.png",e.body.appendChild(r)}}a.karma.cmd=a.karma.cmd||[],a.karma.config.go=function(){a.karma.cmd.push("go")};var t=e.createElement("script");t.src="https://karma.mdpcdn.com/service/js-min/karma.js",t.onload=t.onreadystatechange=function(){var a=this.readyState;a&&"complete"!=a&&"loaded"!=a&&r()},t.onerror=r;var m=e.getElementsByTagName("script")[0];m.parentNode.insertBefore(t,m)
+    }(window,document);
     </script>
     
     
@@ -128,7 +132,7 @@
       <link rel="stylesheet" type="text/css"
             href="/dist/style.css" lazyload="1">
   </head>
-  <body class="template-homepage " >
+  <body class="template-homepage  karma-site-container" >
       
         <header class="navigation  homepage-nav">
           <nav class="main no-secondary-ribbon no-utility-ribbon contextual-social-enabled has-headline full-size-nav-enabled">
@@ -164,7 +168,7 @@
       
                       <div class="logo tall-only desktop-only">
                         <a class="full-logo desktop-only" href="/" data-action="primary-nav-logo" aria-label="Logo">
-                          <svg width="101" height="21" viewBox="0 0 101 21" xmlns="http://www.w3.org/2000/svg"><title>oneline</title><path d="M.744 20.5V.95h12.243v3.584H4.55v4.467h7.638v3.392H4.55v4.522h8.437V20.5H.744zm15.5 0V.536h3.667V20.5h-3.667zm16.05-8.327a3.328 3.328 0 0 0-.206-.98 2.359 2.359 0 0 0-.552-.854 2.85 2.85 0 0 0-.938-.607c-.376-.156-.822-.234-1.337-.234-.478 0-.9.083-1.268.248a3.12 3.12 0 0 0-.938.634 2.807 2.807 0 0 0-.827 1.793h6.066zm3.42 4.44a5.648 5.648 0 0 1-.786 1.667 5.768 5.768 0 0 1-1.31 1.365 6.31 6.31 0 0 1-1.806.924c-.69.23-1.448.345-2.275.345-.938 0-1.83-.161-2.675-.483a6.475 6.475 0 0 1-2.234-1.42c-.643-.625-1.153-1.388-1.53-2.289-.377-.9-.565-1.92-.565-3.06 0-1.085.184-2.068.551-2.95.368-.883.86-1.632 1.476-2.248a6.623 6.623 0 0 1 2.137-1.434 6.413 6.413 0 0 1 2.509-.51c2.114 0 3.76.625 4.936 1.875 1.176 1.25 1.765 2.969 1.765 5.156 0 .258-.01.501-.028.731-.018.23-.027.363-.027.4h-9.707c.018.441.124.85.317 1.227.193.377.441.703.745.979.303.276.657.492 1.061.648.405.156.837.234 1.296.234.864 0 1.54-.193 2.027-.579a3.295 3.295 0 0 0 1.062-1.489l3.06.91zm2.814 3.887V6.933h3.502v1.655a3.29 3.29 0 0 1 .717-.883c.295-.257.62-.468.98-.634a5.855 5.855 0 0 1 1.13-.386A5.048 5.048 0 0 1 46 6.547c.938 0 1.756.193 2.454.58a3.67 3.67 0 0 1 1.572 1.681c.533-.827 1.158-1.41 1.875-1.75.717-.34 1.526-.51 2.427-.51a5.8 5.8 0 0 1 1.82.289c.588.193 1.112.5 1.572.924.46.422.827.96 1.103 1.613.275.652.413 1.429.413 2.33V20.5H55.68v-8.052c0-.735-.188-1.346-.565-1.833-.377-.488-.988-.731-1.834-.731-.79 0-1.406.262-1.847.786-.442.524-.662 1.153-.662 1.889V20.5h-3.64v-8.052c0-.735-.193-1.346-.58-1.833-.385-.488-.992-.731-1.82-.731-.808 0-1.433.257-1.874.772-.441.515-.662 1.149-.662 1.903V20.5h-3.668zm32.9-8.327a3.328 3.328 0 0 0-.207-.98 2.359 2.359 0 0 0-.552-.854 2.85 2.85 0 0 0-.937-.607c-.377-.156-.823-.234-1.338-.234-.478 0-.9.083-1.268.248a3.12 3.12 0 0 0-.938.634 2.807 2.807 0 0 0-.827 1.793h6.067zm3.419 4.44a5.648 5.648 0 0 1-.786 1.667 5.768 5.768 0 0 1-1.31 1.365 6.31 6.31 0 0 1-1.806.924c-.69.23-1.448.345-2.275.345-.937 0-1.829-.161-2.675-.483a6.475 6.475 0 0 1-2.233-1.42c-.644-.625-1.154-1.388-1.53-2.289-.378-.9-.566-1.92-.566-3.06 0-1.085.184-2.068.552-2.95.367-.883.859-1.632 1.475-2.248A6.623 6.623 0 0 1 65.83 7.03a6.413 6.413 0 0 1 2.51-.51c2.113 0 3.759.625 4.935 1.875 1.177 1.25 1.765 2.969 1.765 5.156 0 .258-.01.501-.028.731-.018.23-.027.363-.027.4h-9.707c.019.441.124.85.317 1.227.194.377.442.703.745.979s.657.492 1.062.648c.404.156.836.234 1.296.234.864 0 1.54-.193 2.026-.579a3.295 3.295 0 0 0 1.062-1.489l3.06.91zm6.482 3.887h-3.667V6.933h3.557v1.682a3.837 3.837 0 0 1 1.723-1.544 5.244 5.244 0 0 1 2.193-.496c.845 0 1.576.142 2.192.427a4.38 4.38 0 0 1 1.53 1.145c.405.478.703 1.047.896 1.71.193.661.29 1.36.29 2.095V20.5h-3.668v-7.914c0-.772-.197-1.415-.592-1.93-.396-.515-1.034-.772-1.917-.772-.809 0-1.434.271-1.875.813-.441.543-.662 1.209-.662 2V20.5zM98.014 6.933h2.73v3.254h-2.73v5.68c0 .589.134.998.4 1.228.267.23.666.344 1.2.344.22 0 .44-.009.661-.027.221-.019.377-.046.47-.083v3.033a4.163 4.163 0 0 1-.76.22c-.34.074-.776.111-1.309.111-1.324 0-2.371-.367-3.143-1.103-.773-.735-1.159-1.765-1.159-3.088v-6.315H91.92V6.933h.69c.717 0 1.245-.206 1.585-.62.34-.414.51-.924.51-1.53V2.88h3.31v4.053z" fill="#282F2F" fill-rule="nonzero"/></svg>    </a>
+                          <svg width="101" height="21" viewBox="0 0 101 21" xmlns="http://www.w3.org/2000/svg"><path d="M.744 20.5V.95h12.243v3.584H4.55v4.467h7.638v3.392H4.55v4.522h8.437V20.5H.744zm15.5 0V.536h3.667V20.5h-3.667zm16.05-8.327a3.328 3.328 0 0 0-.206-.98 2.359 2.359 0 0 0-.552-.854 2.85 2.85 0 0 0-.938-.607c-.376-.156-.822-.234-1.337-.234-.478 0-.9.083-1.268.248a3.12 3.12 0 0 0-.938.634 2.807 2.807 0 0 0-.827 1.793h6.066zm3.42 4.44a5.648 5.648 0 0 1-.786 1.667 5.768 5.768 0 0 1-1.31 1.365 6.31 6.31 0 0 1-1.806.924c-.69.23-1.448.345-2.275.345-.938 0-1.83-.161-2.675-.483a6.475 6.475 0 0 1-2.234-1.42c-.643-.625-1.153-1.388-1.53-2.289-.377-.9-.565-1.92-.565-3.06 0-1.085.184-2.068.551-2.95.368-.883.86-1.632 1.476-2.248a6.623 6.623 0 0 1 2.137-1.434 6.413 6.413 0 0 1 2.509-.51c2.114 0 3.76.625 4.936 1.875 1.176 1.25 1.765 2.969 1.765 5.156 0 .258-.01.501-.028.731-.018.23-.027.363-.027.4h-9.707c.018.441.124.85.317 1.227.193.377.441.703.745.979.303.276.657.492 1.061.648.405.156.837.234 1.296.234.864 0 1.54-.193 2.027-.579a3.295 3.295 0 0 0 1.062-1.489l3.06.91zm2.814 3.887V6.933h3.502v1.655a3.29 3.29 0 0 1 .717-.883c.295-.257.62-.468.98-.634a5.855 5.855 0 0 1 1.13-.386A5.048 5.048 0 0 1 46 6.547c.938 0 1.756.193 2.454.58a3.67 3.67 0 0 1 1.572 1.681c.533-.827 1.158-1.41 1.875-1.75.717-.34 1.526-.51 2.427-.51a5.8 5.8 0 0 1 1.82.289c.588.193 1.112.5 1.572.924.46.422.827.96 1.103 1.613.275.652.413 1.429.413 2.33V20.5H55.68v-8.052c0-.735-.188-1.346-.565-1.833-.377-.488-.988-.731-1.834-.731-.79 0-1.406.262-1.847.786-.442.524-.662 1.153-.662 1.889V20.5h-3.64v-8.052c0-.735-.193-1.346-.58-1.833-.385-.488-.992-.731-1.82-.731-.808 0-1.433.257-1.874.772-.441.515-.662 1.149-.662 1.903V20.5h-3.668zm32.9-8.327a3.328 3.328 0 0 0-.207-.98 2.359 2.359 0 0 0-.552-.854 2.85 2.85 0 0 0-.937-.607c-.377-.156-.823-.234-1.338-.234-.478 0-.9.083-1.268.248a3.12 3.12 0 0 0-.938.634 2.807 2.807 0 0 0-.827 1.793h6.067zm3.419 4.44a5.648 5.648 0 0 1-.786 1.667 5.768 5.768 0 0 1-1.31 1.365 6.31 6.31 0 0 1-1.806.924c-.69.23-1.448.345-2.275.345-.937 0-1.829-.161-2.675-.483a6.475 6.475 0 0 1-2.233-1.42c-.644-.625-1.154-1.388-1.53-2.289-.378-.9-.566-1.92-.566-3.06 0-1.085.184-2.068.552-2.95.367-.883.859-1.632 1.475-2.248A6.623 6.623 0 0 1 65.83 7.03a6.413 6.413 0 0 1 2.51-.51c2.113 0 3.759.625 4.935 1.875 1.177 1.25 1.765 2.969 1.765 5.156 0 .258-.01.501-.028.731-.018.23-.027.363-.027.4h-9.707c.019.441.124.85.317 1.227.194.377.442.703.745.979s.657.492 1.062.648c.404.156.836.234 1.296.234.864 0 1.54-.193 2.026-.579a3.295 3.295 0 0 0 1.062-1.489l3.06.91zm6.482 3.887h-3.667V6.933h3.557v1.682a3.837 3.837 0 0 1 1.723-1.544 5.244 5.244 0 0 1 2.193-.496c.845 0 1.576.142 2.192.427a4.38 4.38 0 0 1 1.53 1.145c.405.478.703 1.047.896 1.71.193.661.29 1.36.29 2.095V20.5h-3.668v-7.914c0-.772-.197-1.415-.592-1.93-.396-.515-1.034-.772-1.917-.772-.809 0-1.434.271-1.875.813-.441.543-.662 1.209-.662 2V20.5zM98.014 6.933h2.73v3.254h-2.73v5.68c0 .589.134.998.4 1.228.267.23.666.344 1.2.344.22 0 .44-.009.661-.027.221-.019.377-.046.47-.083v3.033a4.163 4.163 0 0 1-.76.22c-.34.074-.776.111-1.309.111-1.324 0-2.371-.367-3.143-1.103-.773-.735-1.159-1.765-1.159-3.088v-6.315H91.92V6.933h.69c.717 0 1.245-.206 1.585-.62.34-.414.51-.924.51-1.53V2.88h3.31v4.053z" fill="#282F2F" fill-rule="nonzero"/></svg>    </a>
                       </div>
                       <div class="logo short-only">
                         <a class="full-logo" href="/" data-action="primary-nav-logo" aria-label="Logo">
@@ -177,50 +181,44 @@
                         <div class="social-container display-flex">
                               <span
                                 class="icon icon-facebook-circle-solid social-icon padding-8-right"
-                                  data-social-service=facebook
+                                  data-social-service="facebook"
                               >
-                                  <a href="https://www.facebook.com/sharer/sharer.php?u&#x3D;http://time.com%3Futm_source&#x3D;facebook.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage%26utm_content&#x3D;20181125"
+                                  <a href="https://www.facebook.com/sharer/sharer.php?u&#x3D;http://time.com%3Futm_source&#x3D;facebook.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage%26utm_content&#x3D;20181212"
                                     class="display-block component popup"
                                       target="_blank"
                                     title="facebook share"
                                     aria-label="Share on facebook"
                                   >
                               
-                              
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="200 0 400 400"><path fill="#3B5998" d="M400 400c-110 0-200-90-200-200S290 0 400 0s200 90 200 200-90 200-200 200z"/><path fill="#FFF" d="M422.5 160h15v-21.2c-2.5 0-5 0-7.5-1.2h-13.8c-7.5 0-13.8 1.2-18.8 5-6.2 5-10 11.2-11.2 18.8 0 2.5-1.2 6.2-1.2 8.8v17.5h-22.5v23.8H385v61.2h26.2v-61.2h22.5c1.2-7.5 2.5-16.2 3.7-25h-25V169c-1.2-6.5 3.8-9 10.1-9"/></svg>
-                              
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="200 0 400 400" role="img" aria-hidden="true" tabindex="-1"><path fill="#3B5998" d="M400 400c-110 0-200-90-200-200S290 0 400 0s200 90 200 200-90 200-200 200z"/><path fill="#FFF" d="M422.5 160h15v-21.2c-2.5 0-5 0-7.5-1.2h-13.8c-7.5 0-13.8 1.2-18.8 5-6.2 5-10 11.2-11.2 18.8 0 2.5-1.2 6.2-1.2 8.8v17.5h-22.5v23.8H385v61.2h26.2v-61.2h22.5c1.2-7.5 2.5-16.2 3.7-25h-25V169c-1.2-6.5 3.8-9 10.1-9"/></svg>
                               
                                   </a>
                               </span>
                                     <span
                                 class="icon icon-twitter-circle-solid social-icon padding-8-right"
-                                  data-social-service=twitter
+                                  data-social-service="twitter"
                               >
-                                  <a href="https://twitter.com/intent/tweet?text&#x3D;TIME%20Homepage%20https://ti.me/2qjZfoL%3Futm_source&#x3D;twitter.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage"
+                                  <a href="https://twitter.com/intent/tweet?text&#x3D;TIME%20Homepage%20http://bit.ly/2DYG5xJ%3Futm_source&#x3D;twitter.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage"
                                     class="display-block component popup"
                                       target="_blank"
                                     title="twitter share"
                                     aria-label="Share on twitter"
                                   >
                               
-                              
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#1DA1F2" d="M16 32C7.2 32 0 24.8 0 16S7.2 0 16 0s16 7.2 16 16-7.2 16-16 16z"/><path fill="#FFF" d="M13.8 19.2c-1.3 0-2.2-1-2.4-1.8.4.1.7.1 1.1 0-.7-.2-1.3-.6-1.7-1.2-.3-.4-.4-.9-.4-1.4.4.2.7.3 1.1.3-.5-.4-.9-.9-1.1-1.6-.1-.7-.1-1.3.3-1.9 1.4 1.7 3.2 2.6 5.3 2.8v-.3c-.1-.6 0-1.2.4-1.7.4-.7 1-1.1 1.7-1.2.9-.1 1.6.1 2.2.7 0 0 .1.1.1 0 .5-.1 1-.3 1.5-.6-.2.6-.6 1.1-1.1 1.4.5-.1 1-.2 1.4-.4-.1.1-.2.3-.3.4-.3.3-.6.7-.9.9v1.3c-.1.8-.3 1.6-.7 2.4-.4.8-.8 1.5-1.4 2.1-1 1-2.2 1.7-3.5 2-.5.1-.9.2-1.4.2-1.5 0-2.9-.3-4.1-1.1h-.1c.9.1 1.7 0 2.6-.4.6-.3 1-.5 1.4-.9"/></svg>
-                              
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-hidden="true" tabindex="-1"><path fill="#1DA1F2" d="M16 32C7.2 32 0 24.8 0 16S7.2 0 16 0s16 7.2 16 16-7.2 16-16 16z"/><path fill="#FFF" d="M13.8 19.2c-1.3 0-2.2-1-2.4-1.8.4.1.7.1 1.1 0-.7-.2-1.3-.6-1.7-1.2-.3-.4-.4-.9-.4-1.4.4.2.7.3 1.1.3-.5-.4-.9-.9-1.1-1.6-.1-.7-.1-1.3.3-1.9 1.4 1.7 3.2 2.6 5.3 2.8v-.3c-.1-.6 0-1.2.4-1.7.4-.7 1-1.1 1.7-1.2.9-.1 1.6.1 2.2.7 0 0 .1.1.1 0 .5-.1 1-.3 1.5-.6-.2.6-.6 1.1-1.1 1.4.5-.1 1-.2 1.4-.4-.1.1-.2.3-.3.4-.3.3-.6.7-.9.9v1.3c-.1.8-.3 1.6-.7 2.4-.4.8-.8 1.5-1.4 2.1-1 1-2.2 1.7-3.5 2-.5.1-.9.2-1.4.2-1.5 0-2.9-.3-4.1-1.1h-.1c.9.1 1.7 0 2.6-.4.6-.3 1-.5 1.4-.9"/></svg>
                               
                                   </a>
                               </span>
                                       <span
                                   class="icon icon-email-circle-solid social-icon padding-8-right"
                                 >
-                                    <a href="mailto:?subject&#x3D;TIME%20Homepage%20&amp;body&#x3D;http://time.com%3Futm_source&#x3D;emailshare%26utm_medium&#x3D;email%26utm_campaign&#x3D;email-share-homepage%26utm_content&#x3D;20181125"
+                                    <a href="mailto:?subject&#x3D;TIME%20Homepage%20&amp;body&#x3D;http://time.com%3Futm_source&#x3D;emailshare%26utm_medium&#x3D;email%26utm_campaign&#x3D;email-share-homepage%26utm_content&#x3D;20181212"
                                       class="display-block "
                                       title=" share"
                                       aria-label="Share on undefined"
                                     >
                                 
-                                
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="226.8 23.6 400 400"><path fill="#685F55" d="M426.8 423.6c-110.5 0-200-89.5-200-200s89.5-200 200-200 200 89.5 200 200-89.6 200-200 200z"/><path fill="#FFF" d="M339.2 154.9v137.5h175V154.9h-175zm12.6 125V176.8l75 53.1 75-55v105h-150zm6.2-112.5h137.5l-68.8 50-68.7-50z"/></svg>
-                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="226.8 23.6 400 400" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M426.8 423.6c-110.5 0-200-89.5-200-200s89.5-200 200-200 200 89.5 200 200-89.6 200-200 200z"/><path fill="#FFF" d="M339.2 154.9v137.5h175V154.9h-175zm12.6 125V176.8l75 53.1 75-55v105h-150zm6.2-112.5h137.5l-68.8 50-68.7-50z"/></svg>
                                 
                                     </a>
                                 </span>
@@ -236,50 +234,44 @@
                             <div class="social-container display-flex">
                                   <span
                                     class="icon icon-facebook-circle-solid social-icon padding-8-right"
-                                      data-social-service=facebook
+                                      data-social-service="facebook"
                                   >
-                                      <a href="https://www.facebook.com/sharer/sharer.php?u&#x3D;http://time.com%3Futm_source&#x3D;facebook.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage%26utm_content&#x3D;20181125"
+                                      <a href="https://www.facebook.com/sharer/sharer.php?u&#x3D;http://time.com%3Futm_source&#x3D;facebook.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage%26utm_content&#x3D;20181212"
                                         class="display-block component popup"
                                           target="_blank"
                                         title="facebook share"
                                         aria-label="Share on facebook"
                                       >
                                   
-                                  
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="200 0 400 400"><path fill="#3B5998" d="M400 400c-110 0-200-90-200-200S290 0 400 0s200 90 200 200-90 200-200 200z"/><path fill="#FFF" d="M422.5 160h15v-21.2c-2.5 0-5 0-7.5-1.2h-13.8c-7.5 0-13.8 1.2-18.8 5-6.2 5-10 11.2-11.2 18.8 0 2.5-1.2 6.2-1.2 8.8v17.5h-22.5v23.8H385v61.2h26.2v-61.2h22.5c1.2-7.5 2.5-16.2 3.7-25h-25V169c-1.2-6.5 3.8-9 10.1-9"/></svg>
-                                  
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="200 0 400 400" role="img" aria-hidden="true" tabindex="-1"><path fill="#3B5998" d="M400 400c-110 0-200-90-200-200S290 0 400 0s200 90 200 200-90 200-200 200z"/><path fill="#FFF" d="M422.5 160h15v-21.2c-2.5 0-5 0-7.5-1.2h-13.8c-7.5 0-13.8 1.2-18.8 5-6.2 5-10 11.2-11.2 18.8 0 2.5-1.2 6.2-1.2 8.8v17.5h-22.5v23.8H385v61.2h26.2v-61.2h22.5c1.2-7.5 2.5-16.2 3.7-25h-25V169c-1.2-6.5 3.8-9 10.1-9"/></svg>
                                   
                                       </a>
                                   </span>
                                         <span
                                     class="icon icon-twitter-circle-solid social-icon padding-8-right"
-                                      data-social-service=twitter
+                                      data-social-service="twitter"
                                   >
-                                      <a href="https://twitter.com/intent/tweet?text&#x3D;TIME%20Homepage%20https://ti.me/2qjZfoL%3Futm_source&#x3D;twitter.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage"
+                                      <a href="https://twitter.com/intent/tweet?text&#x3D;TIME%20Homepage%20http://bit.ly/2DYG5xJ%3Futm_source&#x3D;twitter.com%26utm_medium&#x3D;social%26utm_campaign&#x3D;social-share-homepage"
                                         class="display-block component popup"
                                           target="_blank"
                                         title="twitter share"
                                         aria-label="Share on twitter"
                                       >
                                   
-                                  
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#1DA1F2" d="M16 32C7.2 32 0 24.8 0 16S7.2 0 16 0s16 7.2 16 16-7.2 16-16 16z"/><path fill="#FFF" d="M13.8 19.2c-1.3 0-2.2-1-2.4-1.8.4.1.7.1 1.1 0-.7-.2-1.3-.6-1.7-1.2-.3-.4-.4-.9-.4-1.4.4.2.7.3 1.1.3-.5-.4-.9-.9-1.1-1.6-.1-.7-.1-1.3.3-1.9 1.4 1.7 3.2 2.6 5.3 2.8v-.3c-.1-.6 0-1.2.4-1.7.4-.7 1-1.1 1.7-1.2.9-.1 1.6.1 2.2.7 0 0 .1.1.1 0 .5-.1 1-.3 1.5-.6-.2.6-.6 1.1-1.1 1.4.5-.1 1-.2 1.4-.4-.1.1-.2.3-.3.4-.3.3-.6.7-.9.9v1.3c-.1.8-.3 1.6-.7 2.4-.4.8-.8 1.5-1.4 2.1-1 1-2.2 1.7-3.5 2-.5.1-.9.2-1.4.2-1.5 0-2.9-.3-4.1-1.1h-.1c.9.1 1.7 0 2.6-.4.6-.3 1-.5 1.4-.9"/></svg>
-                                  
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-hidden="true" tabindex="-1"><path fill="#1DA1F2" d="M16 32C7.2 32 0 24.8 0 16S7.2 0 16 0s16 7.2 16 16-7.2 16-16 16z"/><path fill="#FFF" d="M13.8 19.2c-1.3 0-2.2-1-2.4-1.8.4.1.7.1 1.1 0-.7-.2-1.3-.6-1.7-1.2-.3-.4-.4-.9-.4-1.4.4.2.7.3 1.1.3-.5-.4-.9-.9-1.1-1.6-.1-.7-.1-1.3.3-1.9 1.4 1.7 3.2 2.6 5.3 2.8v-.3c-.1-.6 0-1.2.4-1.7.4-.7 1-1.1 1.7-1.2.9-.1 1.6.1 2.2.7 0 0 .1.1.1 0 .5-.1 1-.3 1.5-.6-.2.6-.6 1.1-1.1 1.4.5-.1 1-.2 1.4-.4-.1.1-.2.3-.3.4-.3.3-.6.7-.9.9v1.3c-.1.8-.3 1.6-.7 2.4-.4.8-.8 1.5-1.4 2.1-1 1-2.2 1.7-3.5 2-.5.1-.9.2-1.4.2-1.5 0-2.9-.3-4.1-1.1h-.1c.9.1 1.7 0 2.6-.4.6-.3 1-.5 1.4-.9"/></svg>
                                   
                                       </a>
                                   </span>
                                           <span
                                       class="icon icon-email-circle-solid social-icon padding-8-right"
                                     >
-                                        <a href="mailto:?subject&#x3D;TIME%20Homepage%20&amp;body&#x3D;http://time.com%3Futm_source&#x3D;emailshare%26utm_medium&#x3D;email%26utm_campaign&#x3D;email-share-homepage%26utm_content&#x3D;20181125"
+                                        <a href="mailto:?subject&#x3D;TIME%20Homepage%20&amp;body&#x3D;http://time.com%3Futm_source&#x3D;emailshare%26utm_medium&#x3D;email%26utm_campaign&#x3D;email-share-homepage%26utm_content&#x3D;20181212"
                                           class="display-block "
                                           title=" share"
                                           aria-label="Share on undefined"
                                         >
                                     
-                                    
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="226.8 23.6 400 400"><path fill="#685F55" d="M426.8 423.6c-110.5 0-200-89.5-200-200s89.5-200 200-200 200 89.5 200 200-89.6 200-200 200z"/><path fill="#FFF" d="M339.2 154.9v137.5h175V154.9h-175zm12.6 125V176.8l75 53.1 75-55v105h-150zm6.2-112.5h137.5l-68.8 50-68.7-50z"/></svg>
-                                    
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="226.8 23.6 400 400" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M426.8 423.6c-110.5 0-200-89.5-200-200s89.5-200 200-200 200 89.5 200 200-89.6 200-200 200z"/><path fill="#FFF" d="M339.2 154.9v137.5h175V154.9h-175zm12.6 125V176.8l75 53.1 75-55v105h-150zm6.2-112.5h137.5l-68.8 50-68.7-50z"/></svg>
                                     
                                         </a>
                                     </span>
@@ -297,9 +289,7 @@
         class="icon icon-search utility-icon color-ribbon-primary-text"
       >
       
-      
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#685F55" d="M14.1 14.751a5.53 5.53 0 1 1 .651-.651L19 18.348l-.652.652-4.248-4.249zm-3.557.4a4.608 4.608 0 1 0 0-9.216 4.608 4.608 0 0 0 0 9.215z"/></svg>
-      
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" tabindex="-1"><path fill="#685F55" d="M14.1 14.751a5.53 5.53 0 1 1 .651-.651L19 18.348l-.652.652-4.248-4.249zm-3.557.4a4.608 4.608 0 1 0 0-9.216 4.608 4.608 0 0 0 0 9.215z"/></svg>
       
       
       </span>
@@ -348,15 +338,13 @@
                     </div>
       
       
-                    
-                    
-                      <div
-                            id="div-gpt-cm"
-                            data-tier="1"
-                                
-                        class="ad ad-container ad-wrapper type-4x1 header-text-ad type-cm-subscribe desktop-ad cm-ad karma-ad"
-                        data-dimensions="4x1" role="complementary" aria-hidden="true"></div>
-                    
+                      
+                        <div
+                              id="div-gpt-cm"
+                              data-tier="1"
+                                  
+                          class="ad ad-container ad-wrapper type-4x1 header-text-ad type-cm-subscribe desktop-ad cm-ad karma-ad"
+                          data-dimensions="4x1" role="complementary" aria-hidden="true"></div>
                     
       
                       <div class="buttons outside desktop-only" data-tracking-zone="search">
@@ -365,9 +353,7 @@
         class="icon icon-search utility-icon color-ribbon-primary-text"
       >
       
-      
-        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><title>Search</title><path d="M12.5 11h-.79l-.28-.27A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" /></svg>
-      
+        <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><title>Search</title><path d="M12.5 11h-.79l-.28-.27A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" /></svg>
       
       
       </span>
@@ -386,9 +372,7 @@
         class="icon icon-close utility-icon color-ribbon-primary-text"
       >
       
-      
-        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Close</title><path fill="#F0F1F3" d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"/></svg>
-      
+        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><title>Close</title><path fill="#F0F1F3" d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"/></svg>
       
       </span>
       </button>
@@ -707,9 +691,7 @@
                           aria-label="Share on undefined"
                         >
                     
-                    
-                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.258-6.693 14.95-14.95 14.95S3.05 26.26 3.05 18 9.742 3.05 18 3.05 32.95 9.74 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M19.718 13.698c.433-.014.866-.004 1.3-.004h.18V11.57c-.232-.023-.473-.054-.716-.065-.445-.02-.89-.04-1.336-.03-.68.013-1.323.17-1.884.55-.644.435-.998 1.05-1.132 1.773-.057.3-.07.607-.08.912-.01.477-.002.953 0 1.43v.18h-2.16v2.373h2.147v5.966h2.622V18.7h2.134l.33-2.385h-.482c-.608.002-2.004 0-2.004 0s.006-1.177.02-1.687c.02-.7.46-.912 1.057-.932" fill="#B7B4B4"/></g></svg>
-                    
+                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.258-6.693 14.95-14.95 14.95S3.05 26.26 3.05 18 9.742 3.05 18 3.05 32.95 9.74 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M19.718 13.698c.433-.014.866-.004 1.3-.004h.18V11.57c-.232-.023-.473-.054-.716-.065-.445-.02-.89-.04-1.336-.03-.68.013-1.323.17-1.884.55-.644.435-.998 1.05-1.132 1.773-.057.3-.07.607-.08.912-.01.477-.002.953 0 1.43v.18h-2.16v2.373h2.147v5.966h2.622V18.7h2.134l.33-2.385h-.482c-.608.002-2.004 0-2.004 0s.006-1.177.02-1.687c.02-.7.46-.912 1.057-.932" fill="#B7B4B4"/></g></svg>
                     
                         </a>
                     </span>
@@ -724,9 +706,7 @@
                           aria-label="Share on undefined"
                         >
                     
-                    
-                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.257-6.693 14.95-14.95 14.95S3.05 26.258 3.05 18 9.742 3.05 18 3.05 32.95 9.742 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M22.624 22c0 .344-.28.624-.623.624h-8.47c-.342 0-.62-.28-.62-.623v-5.13h1.218c-.07.29-.104.59-.104.9 0 2.07 1.677 3.75 3.75 3.75 2.07 0 3.75-1.68 3.75-3.75 0-.306-.038-.604-.108-.89h1.22V22zm-7.137-5.13c.356-.907 1.24-1.552 2.274-1.552 1.04 0 1.92.645 2.28 1.553.11.28.17.58.17.9 0 1.347-1.1 2.444-2.44 2.444-1.345 0-2.442-1.097-2.442-2.443 0-.314.06-.615.17-.89zm4.916-3.576c0-.19.154-.344.344-.344h1.49c.19 0 .344.154.344.344v1.49c0 .19-.15.344-.34.344h-1.49c-.19 0-.34-.154-.34-.344v-1.49zM22 11.592h-8.478c-1.065 0-1.93.865-1.93 1.93v8.48c0 1.064.865 1.93 1.93 1.93h8.48c1.065 0 1.93-.866 1.93-1.93v-8.48c0-1.065-.865-1.93-1.93-1.93z" fill="#B7B4B4"/></g></svg>
-                    
+                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.257-6.693 14.95-14.95 14.95S3.05 26.258 3.05 18 9.742 3.05 18 3.05 32.95 9.742 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M22.624 22c0 .344-.28.624-.623.624h-8.47c-.342 0-.62-.28-.62-.623v-5.13h1.218c-.07.29-.104.59-.104.9 0 2.07 1.677 3.75 3.75 3.75 2.07 0 3.75-1.68 3.75-3.75 0-.306-.038-.604-.108-.89h1.22V22zm-7.137-5.13c.356-.907 1.24-1.552 2.274-1.552 1.04 0 1.92.645 2.28 1.553.11.28.17.58.17.9 0 1.347-1.1 2.444-2.44 2.444-1.345 0-2.442-1.097-2.442-2.443 0-.314.06-.615.17-.89zm4.916-3.576c0-.19.154-.344.344-.344h1.49c.19 0 .344.154.344.344v1.49c0 .19-.15.344-.34.344h-1.49c-.19 0-.34-.154-.34-.344v-1.49zM22 11.592h-8.478c-1.065 0-1.93.865-1.93 1.93v8.48c0 1.064.865 1.93 1.93 1.93h8.48c1.065 0 1.93-.866 1.93-1.93v-8.48c0-1.065-.865-1.93-1.93-1.93z" fill="#B7B4B4"/></g></svg>
                     
                         </a>
                     </span>
@@ -741,9 +721,7 @@
                           aria-label="Share on undefined"
                         >
                     
-                    
-                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.977 18c0 8.272-6.705 14.976-14.977 14.976S3.023 26.272 3.023 18C3.023 9.728 9.728 3.024 18 3.024S32.977 9.728 32.977 18" stroke-width="2" stroke="#B7B4B4"/><path d="M15.783 21.476c-1.48-.052-2.404-1.114-2.65-1.976.413.078.82.063 1.222-.037.01-.002.02-.01.04-.018-.8-.187-1.42-.616-1.848-1.307-.286-.46-.422-.962-.418-1.514.4.214.81.333 1.26.345-.607-.44-1.01-1.01-1.177-1.73-.164-.73-.057-1.42.306-2.07 1.54 1.813 3.492 2.81 5.872 2.973-.02-.113-.037-.21-.048-.31-.08-.67.054-1.295.416-1.86.454-.71 1.1-1.15 1.93-1.29.96-.156 1.796.117 2.495.795.046.045.085.06.15.045.586-.125 1.14-.335 1.657-.635l.04-.02h.02c-.225.664-.635 1.174-1.22 1.55.553-.06 1.08-.206 1.586-.426l.01.013c-.11.143-.215.29-.327.427-.302.373-.65.7-1.035.984-.034.025-.05.05-.05.09.016.424 0 .846-.053 1.266-.11.885-.352 1.73-.73 2.534-.39.833-.9 1.585-1.54 2.246-1.083 1.12-2.39 1.844-3.912 2.18-.52.115-1.05.173-1.585.19-1.64.046-3.16-.36-4.554-1.224l-.066-.043c.996.107 1.94-.02 2.85-.393.484-.197.93-.457 1.354-.79" fill="#B7B4B4"/></g></svg>
-                    
+                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.977 18c0 8.272-6.705 14.976-14.977 14.976S3.023 26.272 3.023 18C3.023 9.728 9.728 3.024 18 3.024S32.977 9.728 32.977 18" stroke-width="2" stroke="#B7B4B4"/><path d="M15.783 21.476c-1.48-.052-2.404-1.114-2.65-1.976.413.078.82.063 1.222-.037.01-.002.02-.01.04-.018-.8-.187-1.42-.616-1.848-1.307-.286-.46-.422-.962-.418-1.514.4.214.81.333 1.26.345-.607-.44-1.01-1.01-1.177-1.73-.164-.73-.057-1.42.306-2.07 1.54 1.813 3.492 2.81 5.872 2.973-.02-.113-.037-.21-.048-.31-.08-.67.054-1.295.416-1.86.454-.71 1.1-1.15 1.93-1.29.96-.156 1.796.117 2.495.795.046.045.085.06.15.045.586-.125 1.14-.335 1.657-.635l.04-.02h.02c-.225.664-.635 1.174-1.22 1.55.553-.06 1.08-.206 1.586-.426l.01.013c-.11.143-.215.29-.327.427-.302.373-.65.7-1.035.984-.034.025-.05.05-.05.09.016.424 0 .846-.053 1.266-.11.885-.352 1.73-.73 2.534-.39.833-.9 1.585-1.54 2.246-1.083 1.12-2.39 1.844-3.912 2.18-.52.115-1.05.173-1.585.19-1.64.046-3.16-.36-4.554-1.224l-.066-.043c.996.107 1.94-.02 2.85-.393.484-.197.93-.457 1.354-.79" fill="#B7B4B4"/></g></svg>
                     
                         </a>
                     </span>
@@ -758,9 +736,7 @@
                           aria-label="Share on undefined"
                         >
                     
-                    
-                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.976 18c0 8.272-6.705 14.976-14.976 14.976-8.27 0-14.976-6.704-14.976-14.976C3.024 9.728 9.73 3.024 18 3.024S32.976 9.728 32.976 18" stroke-width="2" stroke="#B7B4B4"/><path d="M17.162 20.54c-.012.038-.022.072-.03.105-.505 1.976-.562 2.415-1.08 3.332-.247.437-.525.85-.834 1.246-.034.044-.067.102-.137.088-.07-.01-.08-.08-.08-.14-.08-.6-.13-1.2-.11-1.81.03-.79.13-1.06 1.15-5.34.02-.06 0-.12-.02-.18-.24-.65-.29-1.32-.08-2 .46-1.46 2.12-1.57 2.41-.36.18.75-.292 1.72-.654 3.16-.3 1.19 1.1 2.04 2.298 1.17 1.106-.8 1.534-2.72 1.45-4.08-.16-2.71-3.13-3.29-5.02-2.42-2.16 1-2.65 3.68-1.675 4.91.126.157.22.25.18.41-.06.244-.117.49-.186.735-.05.184-.2.25-.384.175-.36-.148-.66-.377-.9-.678-.83-1.026-1.07-3.057.03-4.776 1.212-1.906 3.47-2.676 5.534-2.443 2.468.28 4.02 1.964 4.316 3.873.13.87.035 3.012-1.186 4.53-1.404 1.74-3.68 1.854-4.73.785-.08-.08-.146-.18-.225-.272" fill="#B7B4B4"/></g></svg>
-                    
+                      <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.976 18c0 8.272-6.705 14.976-14.976 14.976-8.27 0-14.976-6.704-14.976-14.976C3.024 9.728 9.73 3.024 18 3.024S32.976 9.728 32.976 18" stroke-width="2" stroke="#B7B4B4"/><path d="M17.162 20.54c-.012.038-.022.072-.03.105-.505 1.976-.562 2.415-1.08 3.332-.247.437-.525.85-.834 1.246-.034.044-.067.102-.137.088-.07-.01-.08-.08-.08-.14-.08-.6-.13-1.2-.11-1.81.03-.79.13-1.06 1.15-5.34.02-.06 0-.12-.02-.18-.24-.65-.29-1.32-.08-2 .46-1.46 2.12-1.57 2.41-.36.18.75-.292 1.72-.654 3.16-.3 1.19 1.1 2.04 2.298 1.17 1.106-.8 1.534-2.72 1.45-4.08-.16-2.71-3.13-3.29-5.02-2.42-2.16 1-2.65 3.68-1.675 4.91.126.157.22.25.18.41-.06.244-.117.49-.186.735-.05.184-.2.25-.384.175-.36-.148-.66-.377-.9-.678-.83-1.026-1.07-3.057.03-4.776 1.212-1.906 3.47-2.676 5.534-2.443 2.468.28 4.02 1.964 4.316 3.873.13.87.035 3.012-1.186 4.53-1.404 1.74-3.68 1.854-4.73.785-.08-.08-.146-.18-.225-.272" fill="#B7B4B4"/></g></svg>
                     
                         </a>
                     </span>
@@ -776,44 +752,40 @@
             <div class="under-nav" data-tracking-zone="under-nav">
             
                   <div class="component promotional-banner">
-                    <a target="_blank" href="http://time.com/5454447/person-of-the-year-2018-poll/?utm_campaign&#x3D;bannerpromo-poypoll2018&amp;utm_source&#x3D;time.com&amp;utm_medium&#x3D;banner">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/poypoll2018-1248-x-50v2.jpg" class="visible-desktop "/>
+                    <a target="_blank" href="http://time.com/person-of-the-year-2018-the-guardians/?utm_campaign&#x3D;bannerpromo-poy2018&amp;utm_source&#x3D;time.com&amp;utm_medium&#x3D;banner">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/poy2018-1248x50.jpg" class="visible-desktop "/>
                   
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/poypoll2018-768x50v2.jpg" class="visible-tablet"/>
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/poypoll2018-360x50v2.jpg" class="visible-mobile"/>
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/poy2018-768x50.jpg" class="visible-tablet"/>
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/poy2018-360x50.jpg" class="visible-mobile"/>
                     </a>
                   </div>
             </div>
       
             	<div class="component adhesion-ad mobile-ad">
             	 	<div class="adhesion-ad-container">
-            	    	
-            	    	
-            	    	  <div
-            	    	        id="div-gpt-mob-adhesive-banner-fixed"
-            	    	        data-tier="1"
-            	    	            
-            	    	    class="ad ad-container ad-wrapper type-320-flex mobile-ad karma-ad"
-            	    	    data-dimensions="102x1;300x50;320x50" role="complementary" aria-hidden="true"></div>
-            	    	
+            	    	  
+            	    	    <div
+            	    	          id="div-gpt-mob-adhesive-banner-fixed"
+            	    	          data-tier="1"
+            	    	              
+            	    	      class="ad ad-container ad-wrapper type-320-flex mobile-ad karma-ad"
+            	    	      data-dimensions="102x1;300x50;320x50" role="complementary" aria-hidden="true"></div>
             	    	
             	  </div>
             	</div>
       
             <div class="ad-wrapper outer tablet-ad desktop-ad full-column">
-                
-                  <div
-                    class="ad-sticky-container desktop-ad tablet-ad karma-ad"
-                  >
-                
-                  <div
-                        id="div-gpt-leaderboard-flex-1"
-                        data-tier="1"
-                            
-                    class="ad ad-container ad-wrapper type-banner type-970x90-flex padding-8-tb desktop-ad tablet-ad karma-ad"
-                    data-dimensions="101x1;970x90;970x66;970x250;728x90" role="complementary" aria-hidden="true"></div>
-                  </div>
-                
+                    <div
+                      class="ad-sticky-container desktop-ad tablet-ad karma-ad"
+                    >
+                  
+                    <div
+                          id="div-gpt-leaderboard-flex-1"
+                          data-tier="1"
+                              
+                      class="ad ad-container ad-wrapper type-banner type-970x90-flex padding-8-tb desktop-ad tablet-ad karma-ad"
+                      data-dimensions="101x1;970x90;970x66;970x250;728x90" role="complementary" aria-hidden="true"></div>
+                    </div>
                 
             </div>
       
@@ -824,32 +796,31 @@
     <div class="column column-feed">
         <div class="column-tout  ">
 
-    <a href="/5462102/climate-change-report-trump-science/" class="">
-      <div
-        class="component lazy-image skip-imagesvc marquee_large_2x
-          
-          
-          
-          "
-        data-src="https://timedotcom.files.wordpress.com/2018/11/climate-change-study.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-        data-alt=""
-        data-title=""
-        data-shop-image="false"
-        
-        
+    <a href="/person-of-the-year-2018-the-guardians-choice/" class="">
+        <div
+          class="component lazy-image skip-imagesvc marquee_large_2x
+            
+            
+            
+            "
+          data-src="http://timedotcom.files.wordpress.com/2018/12/poy-guardians-horizontal-grid.jpeg?quality&#x3D;85&amp;crop&#x3D;1226px%2C0px%2C2473px%2C1650px&amp;resize&#x3D;550%2C367&amp;strip"
+          data-alt=""
+          data-title=""
+          data-shop-image="false"
+              
         >
         
         <noscript>
           <div class="inner-container">
-            <img src="https://timedotcom.files.wordpress.com/2018/11/climate-change-study.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+            <img src="http://timedotcom.files.wordpress.com/2018/12/poy-guardians-horizontal-grid.jpeg?quality&#x3D;85&amp;crop&#x3D;1226px%2C0px%2C2473px%2C1650px&amp;resize&#x3D;550%2C367&amp;strip" alt="" title="">
           </div>
         </noscript>
         
-        <div class="inner-container js-inner-container">
+        <div class="inner-container js-inner-container ">
         </div>
         
         
-      </div>
+        </div>
     </a>
 
 
@@ -857,8 +828,8 @@
     
     <div class='column-tout-metadata'>
       <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-        <a href="/5462102/climate-change-report-trump-science/">
-            Climate Change Report Challenges Trump's Denials
+        <a href="/person-of-the-year-2018-the-guardians-choice/">
+            The Choice: How TIME Picked 2018's Person of the Year
         </a>
       </div>
 
@@ -871,32 +842,31 @@
 
         <div class="column-tout  ">
 
-    <a href="/5460674/california-wildfire-missing/" class="">
-      <div
-        class="component lazy-image skip-imagesvc marquee_large_2x
-          
-          
-          
-          "
-        data-src="https://timedotcom.files.wordpress.com/2018/11/stuart-palley-paradise-california-camp-fire-4-1024.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-        data-alt=""
-        data-title=""
-        data-shop-image="false"
-        
-        
+    <a href="/5475517/capital-gazette-person-of-the-year-2018/" class="">
+        <div
+          class="component lazy-image skip-imagesvc marquee_large_2x
+            
+            
+            
+            "
+          data-src="http://timedotcom.files.wordpress.com/2018/12/capital-gazette-staff-time-person-of-the-year-2018-2.jpg?quality&#x3D;85&amp;crop&#x3D;0px%2C595px%2C1605px%2C1071px&amp;resize&#x3D;550%2C367&amp;strip"
+          data-alt=""
+          data-title=""
+          data-shop-image="false"
+              
         >
         
         <noscript>
           <div class="inner-container">
-            <img src="https://timedotcom.files.wordpress.com/2018/11/stuart-palley-paradise-california-camp-fire-4-1024.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+            <img src="http://timedotcom.files.wordpress.com/2018/12/capital-gazette-staff-time-person-of-the-year-2018-2.jpg?quality&#x3D;85&amp;crop&#x3D;0px%2C595px%2C1605px%2C1071px&amp;resize&#x3D;550%2C367&amp;strip" alt="" title="">
           </div>
         </noscript>
         
-        <div class="inner-container js-inner-container">
+        <div class="inner-container js-inner-container ">
         </div>
         
         
-      </div>
+        </div>
     </a>
 
 
@@ -904,8 +874,8 @@
     
     <div class='column-tout-metadata'>
       <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-        <a href="/5460674/california-wildfire-missing/">
-            Searching for the 870 People Missing in the Camp Fire
+        <a href="/5475517/capital-gazette-person-of-the-year-2018/">
+            'I Hate Being the Story.' <em>The Capital Gazette</em> Reflects on Life After a Newsroom Shooting
         </a>
       </div>
 
@@ -921,39 +891,45 @@
       <div class="column-tout  ">
       
       
-          
-          <div class="component video  ">
-            <span hidden class="jumpstart-video-data" data-jumpstart-version="v3"></span>
-              <div class="jumpstart-video">
-                <video class="video-js" data-embed="default" data-controls="true"
-                data-account="293884104"
-                data-player="SJa0Thl7"
-                data-brand="time"
-                data-video-id="5522097972001"
+            <a href="/person-of-the-year-2018-the-guardians/">
+                <div
+                  class="component lazy-image skip-imagesvc marquee_large_2x
+                    
+                    
+                    
+                    "
+                  data-src="http://timedotcom.files.wordpress.com/2018/12/time-homepage.jpg?quality&#x3D;85&amp;crop&#x3D;0px%2C22px%2C895px%2C598px&amp;resize&#x3D;550%2C367&amp;strip"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
+                >
+                
+                <noscript>
+                  <div class="inner-container">
+                    <img src="http://timedotcom.files.wordpress.com/2018/12/time-homepage.jpg?quality&#x3D;85&amp;crop&#x3D;0px%2C22px%2C895px%2C598px&amp;resize&#x3D;550%2C367&amp;strip" alt="" title="">
+                  </div>
+                </noscript>
+                
+                <div class="inner-container js-inner-container ">
+                </div>
                 
                 
-                
-                  poster="https://timedotcom.files.wordpress.com/2018/11/supreme-court-trasgender-people-military.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                data-autoplay="false"
-                data-viewplay="true"
-                data-stickyplay="true"
-                
-                data-is-lead="false"></video>
-              </div>
-          </div>
+                </div>
+            </a>
       
         <div class='column-tout-info '>
           
           <div class='column-tout-metadata'>
             <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-              <a href="/5462519/trump-administration-supreme-court-transgender-people-military-service/">
-                  Trump Asks Supreme Court to Rule on Transgender Military Ban
+              <a href="/person-of-the-year-2018-the-guardians/">
+                  TIME's Person of the Year: The Guardians
               </a>
             </div>
       
       
               <div class="summary margin-8-top visible-mobile visible-tablet visible-desktop">
-                The Trump administration asked the Supreme Court to issue an unusually quick ruling on the Pentagon&#x27;s policy of restricting military service by transgender people. It&#x27;s the fourth time in recent months the administration has sought to bypass lower courts and push the high court to weigh in quickly on a divisive issue
+                For taking great risks in pursuit of greater truths, for the imperfect but essential quest for facts, for speaking up and for speaking out, the Guardians — Jamal Khashoggi, the Capital Gazette, Maria Ressa, Wa Lone and Kyaw Soe Oo — are TIME&#x27;s Person of the Year
               </div>
           </div>
       
@@ -962,45 +938,42 @@
       </div>
     </div>
     <div class="column text-align-left visible-desktop visible-mobile last-column">
-        
-        
-          <div
-                id="div-gpt-mob-square-fixed-1"
-                data-tier="1"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-300x250 mobile-ad karma-ad"
-            data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-mob-square-fixed-1"
+                  data-tier="1"
+                data-lazy-scroll="true"      
+              class="ad ad-container ad-wrapper type-300x250 mobile-ad karma-ad"
+              data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
         
         <div class="heading-3 column-title  margin-8-bottom ">The Brief</div>
             <div class="column-tout  ">
             
-                <a href="/5462563/wisconsin-teens-viral-nazi-salute-photo-first-amendment/" class="visible-mobile">
-                  <div
-                    class="component lazy-image skip-imagesvc marquee_large_2x
-                      
-                      
-                      
-                      "
-                    data-src="https://timedotcom.files.wordpress.com/2018/11/ap18317648693523.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                    data-alt=""
-                    data-title=""
-                    data-shop-image="false"
-                    
-                    
+                <a href="/5476903/donald-trump-shutdown-border-wall/" class="visible-mobile">
+                    <div
+                      class="component lazy-image skip-imagesvc marquee_large_2x
+                        
+                        
+                        
+                        "
+                      data-src="https://timedotcom.files.wordpress.com/2018/12/trump-schumer-pelosi-pence-white-house.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                      data-alt=""
+                      data-title=""
+                      data-shop-image="false"
+                          
                     >
                     
                     <noscript>
                       <div class="inner-container">
-                        <img src="https://timedotcom.files.wordpress.com/2018/11/ap18317648693523.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                        <img src="https://timedotcom.files.wordpress.com/2018/12/trump-schumer-pelosi-pence-white-house.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                       </div>
                     </noscript>
                     
-                    <div class="inner-container js-inner-container">
+                    <div class="inner-container js-inner-container ">
                     </div>
                     
                     
-                  </div>
+                    </div>
                 </a>
             
             
@@ -1008,8 +981,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462563/wisconsin-teens-viral-nazi-salute-photo-first-amendment/">
-                        School Official: 'Nazi Salute' Teens' Speech Is Protected
+                    <a href="/5476903/donald-trump-shutdown-border-wall/">
+                        Trump Makes Threat Over Border Wall Funding
                     </a>
                   </div>
             
@@ -1027,8 +1000,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462612/nancy-pelosi-democrats-support-leader/">
-                        Nancy Pelosi Urges Democrats to Support Her as Leader
+                    <a href="/5477537/france-hunts-terror-suspect-strasbourg/">
+                        France Hunts Terror Suspect Who Attacked a Christmas Market
                     </a>
                   </div>
             
@@ -1046,8 +1019,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462506/tijuana-humanitarian-crisis-migrant-caravan-un/">
-                        Tijuana Declares 'Humanitarian Crisis' as Migrants Arrive
+                    <a href="/5477483/michael-flynn-requests-no-prison-time/">
+                        Flynn Seeks to Avoid Prison Time in Russia Investigation
                     </a>
                   </div>
             
@@ -1065,8 +1038,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462594/nuns-urge-sisters-report-sexual-abuse/">
-                        Catholic Nuns Urge Sisters Everywhere to Report Sexual Abuse
+                    <a href="/5476906/google-ceo-sundar-pichai-congress/">
+                        Google CEO Refutes Claims of Bias to Congress
                     </a>
                   </div>
             
@@ -1084,8 +1057,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462413/roger-stone-associate-in-plea-talks-with-mueller/">
-                        Roger Stone Associate in Plea Talks With Mueller
+                    <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/">
+                        Trump Says He'd Intervene in Huawei Case for a Trade Deal
                     </a>
                   </div>
             
@@ -1103,8 +1076,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462309/alabama-mall-shooting/">
-                        12-Year-Old Girl Injured in Thanksgiving Mall Shooting
+                    <a href="/5476814/kathie-lee-gifford-leaving-today-show/">
+                        Kathie Lee Gifford Tearfully Announces Today Show Exit
                     </a>
                   </div>
             
@@ -1129,38 +1102,37 @@
           <div class="panel">
               <div class="column-tout  inline">
               
-                  <a href="/5446556/congress-women-pink-wave/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/haley-stevens-election-women.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/5475492/maria-ressa-rappler-person-of-the-year-2018/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="http://timedotcom.files.wordpress.com/2018/12/maria-ressa-person-of-the-year-2018-breakout-facebook.jpg?quality&#x3D;85&amp;crop&#x3D;211px%2C0px%2C2027px%2C1353px&amp;resize&#x3D;550%2C367&amp;strip"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/haley-stevens-election-women.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="http://timedotcom.files.wordpress.com/2018/12/maria-ressa-person-of-the-year-2018-breakout-facebook.jpg?quality&#x3D;85&amp;crop&#x3D;211px%2C0px%2C2027px%2C1353px&amp;resize&#x3D;550%2C367&amp;strip" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1168,8 +1140,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5446556/congress-women-pink-wave/">
-                          How Women Candidates Changed American Politics in 2018
+                      <a href="/5475492/maria-ressa-rappler-person-of-the-year-2018/">
+                          She Reported From War Zones. But Covering Philippine President Duterte Might Be Her Most Dangerous Job Yet
                       </a>
                     </div>
               
@@ -1181,38 +1153,37 @@
               </div>
               <div class="column-tout  inline">
               
-                  <a href="/5444401/will-haskell-connecticut-young-voters/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/will2.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/5472949/donald-trump-russia-denials/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1074416132.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/will2.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1074416132.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1220,8 +1191,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5444401/will-haskell-connecticut-young-voters/">
-                          Inside a 22-Year-Old's Campaign for State Senate
+                      <a href="/5472949/donald-trump-russia-denials/">
+                          How Trump Changes His Story on the Russia Investigation
                       </a>
                     </div>
               
@@ -1233,38 +1204,37 @@
               </div>
               <div class="column-tout  inline">
               
-                  <a href="/5444224/pussy-riot-hong-kong-badiucao-protest/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/gettyimages-1057240948.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/4754901/president-george-hw-bush-accomplishments/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="https://timedotcom.files.wordpress.com/2017/04/bush1.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/gettyimages-1057240948.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="https://timedotcom.files.wordpress.com/2017/04/bush1.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1272,8 +1242,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5444224/pussy-riot-hong-kong-badiucao-protest/">
-                          Pussy Riot Stages Free Speech Protest in Hong Kong 
+                      <a href="/4754901/president-george-hw-bush-accomplishments/">
+                          How President George H.W. Bush Did More Than He Got Credit For
                       </a>
                     </div>
               
@@ -1290,38 +1260,37 @@
           <div class="panel">
               <div class="column-tout  inline">
               
-                  <a href="/5462612/nancy-pelosi-democrats-support-leader/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/nancy-pelosi-leadership.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/5477537/france-hunts-terror-suspect-strasbourg/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="https://timedotcom.files.wordpress.com/2018/12/ap18346109184170.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/nancy-pelosi-leadership.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="https://timedotcom.files.wordpress.com/2018/12/ap18346109184170.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1329,8 +1298,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462612/nancy-pelosi-democrats-support-leader/">
-                          Nancy Pelosi Urges Democrats to Support Her as Leader
+                      <a href="/5477537/france-hunts-terror-suspect-strasbourg/">
+                          France Hunts Terror Suspect Who Attacked a Christmas Market
                       </a>
                     </div>
               
@@ -1342,38 +1311,37 @@
               </div>
               <div class="column-tout  inline">
               
-                  <a href="/5462604/san-francisco-ferry-boat-docks-crash/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/san-francisco-ferry-building.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1069437388.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/san-francisco-ferry-building.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1069437388.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1381,8 +1349,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462604/san-francisco-ferry-boat-docks-crash/">
-                          San Francisco Ferry Boat Crashes Into Docks Twice
+                      <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/">
+                          Trump Says He'd Intervene in Huawei Case for a Trade Deal
                       </a>
                     </div>
               
@@ -1394,38 +1362,37 @@
               </div>
               <div class="column-tout  inline">
               
-                  <a href="/5462594/nuns-urge-sisters-report-sexual-abuse/" class="">
-                    <div
-                      class="component lazy-image skip-imagesvc marquee_large_2x
-                        
-                        
-                        
-                        "
-                      data-src="https://timedotcom.files.wordpress.com/2018/11/nuns-sexual-abuse-report.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                      data-alt=""
-                      data-title=""
-                      data-shop-image="false"
-                      
-                      
+                  <a href="/5477505/malaysia-1mdb-scandal-najib-razak-new-charge/" class="">
+                      <div
+                        class="component lazy-image skip-imagesvc marquee_large_2x
+                          
+                          
+                          
+                          "
+                        data-src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1053263382.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                        data-alt=""
+                        data-title=""
+                        data-shop-image="false"
+                            
                       >
                       
                       <noscript>
                         <div class="inner-container">
-                          <img src="https://timedotcom.files.wordpress.com/2018/11/nuns-sexual-abuse-report.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                          <img src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1053263382.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                         </div>
                       </noscript>
                       
-                      <div class="inner-container js-inner-container">
+                      <div class="inner-container js-inner-container ">
                       </div>
                       
                       
                           <div class="image-flair">
                             <span class="icon utility-icon icon-play-square-solid color-accent">
-                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
+                              <span class="flair"><svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 20 20" role="img" aria-hidden="true" tabindex="-1"><g fill="none" fill-rule="evenodd"><path style="fill: #fff!important" d="M0 20h20V0H0z"/><path fill="#B7B4B4" d="M0 20h20V0H0v20zM7.59 6.538l6.009 3.468-6.008 3.468V6.538z"/></g></svg>
                     </span>
                             </span>
                           </div>
-                    </div>
+                      </div>
                   </a>
               
               
@@ -1433,8 +1400,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462594/nuns-urge-sisters-report-sexual-abuse/">
-                          Catholic Nuns Urge Sisters Everywhere to Report Sexual Abuse
+                      <a href="/5477505/malaysia-1mdb-scandal-najib-razak-new-charge/">
+                          Malaysia's Ex-PM Slapped With New Charge in 1MDB Scandal
                       </a>
                     </div>
               
@@ -1459,11 +1426,11 @@
                   data-account="293884104"
                   data-player="SJa0Thl7"
                   data-brand="time"
-                  data-video-id="5858687071001"
+                  data-video-id="5978121131001"
                   
                   
                   
-                    poster="https://timedotcom.files.wordpress.com/2018/11/haley-stevens-election-women.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    poster="http://timedotcom.files.wordpress.com/2018/12/maria-ressa-person-of-the-year-2018-breakout-facebook.jpg?quality&#x3D;85&amp;crop&#x3D;211px%2C0px%2C2027px%2C1353px&amp;resize&#x3D;550%2C367&amp;strip"
                   data-autoplay="false"
                   data-viewplay="true"
                   data-stickyplay="true"
@@ -1476,8 +1443,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5446556/congress-women-pink-wave/">
-                    How Women Candidates Changed American Politics in 2018
+                <a href="/5475492/maria-ressa-rappler-person-of-the-year-2018/">
+                    She Reported From War Zones. But Covering Philippine President Duterte Might Be Her Most Dangerous Job Yet
                 </a>
               </div>
         
@@ -1489,15 +1456,13 @@
         </div>
       </div>
       <div class="column no-padding visible-desktop">
-        
-        
-          <div
-                id="div-gpt-square-fixed-1"
-                data-tier="1"
-                    
-            class="ad ad-container ad-wrapper type-300x250  karma-ad"
-            data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-square-fixed-1"
+                  data-tier="1"
+                      
+              class="ad ad-container ad-wrapper type-300x250  karma-ad"
+              data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
         
       </div>
     </div>
@@ -1508,43 +1473,34 @@
   <div class="homepage-module with-main-column">
     <div class="column">
         <div class="heading-3 column-title">Magazine</div>
-        <div class="component magazine-carousel" data-items-count=4>
+        <div class="component magazine-carousel" data-items-count=3>
           <ul class="items">
               <li class="item  selected " data-index=0>
                 <div class="inner-container padding-16-top">  
-                  <a href="/5455490/american-like-me/">
-                    <img src="https://timedotcom.files.wordpress.com/2018/11/tim181126_american-coverfinal.jpg?quality&#x3D;85" alt="" />
+                  <a href="/5472305/george-herbert-walker-bush-1924-2018/">
+                    <img src="https://timedotcom.files.wordpress.com/2018/12/bush-cover-final.jpg?quality&#x3D;85" alt="" />
                   </a>
                 </div>
-                <div class="headline heading-4"><a href="/5455490/american-like-me/">I Love America. That’s Why I Have to Tell the Truth About It</a></div>
-                <div class="issue-date">Nov 15, 2018</div>
+                <div class="headline heading-4"><a href="/5472305/george-herbert-walker-bush-1924-2018/">George Herbert Walker Bush 1924-2018</a></div>
+                <div class="issue-date">Dec 6, 2018</div>
               </li>
               <li class="item " data-index=1>
                 <div class="inner-container padding-16-top">  
-                  <a href="/5448815/midterms-2018/">
-                    <img src="https://timedotcom.files.wordpress.com/2018/11/tim181119v1_election-coverfinal.jpg?quality&#x3D;85" alt="" />
+                  <a href="/5466441/the-world-moves-on-and-you-dont/">
+                    <img src="https://timedotcom.files.wordpress.com/2018/11/time-parents-cover.jpg?quality&#x3D;85" alt="" />
                   </a>
                 </div>
-                <div class="headline heading-4"><a href="/5448815/midterms-2018/">Redder. Bluer. Trumpier. America Is About to Be Even More Divided</a></div>
-                <div class="issue-date">Nov 8, 2018</div>
+                <div class="headline heading-4"><a href="/5466441/the-world-moves-on-and-you-dont/">‘The World Moves On And You Don’t.’ Parents Who Lost Children in School Shootings Find Comfort in a Group No One Wants to Join</a></div>
+                <div class="issue-date">Nov 29, 2018</div>
               </li>
               <li class="item " data-index=2>
                 <div class="inner-container padding-16-top">  
-                  <a href="/5441420/gibbs-beyond-hate/">
-                    <img src="https://timedotcom.files.wordpress.com/2018/10/tim181112v1_cov-hatefinal.jpg?quality&#x3D;85" alt="" />
+                  <a href="/5466497/sebastian-kurz/">
+                    <img src="https://timedotcom.files.wordpress.com/2018/11/sebastian-kurz1.jpeg?quality&#x3D;85" alt="" />
                   </a>
                 </div>
-                <div class="headline heading-4"><a href="/5441420/gibbs-beyond-hate/">The Only Way to Fight Hate</a></div>
-                <div class="issue-date">Nov 1, 2018</div>
-              </li>
-              <li class="item " data-index=3>
-                <div class="inner-container padding-16-top">  
-                  <a href="/5433987/guns-common-ground/">
-                    <img src="https://timedotcom.files.wordpress.com/2018/10/time-guns-cover-final.jpg?quality&#x3D;85" alt="" />
-                  </a>
-                </div>
-                <div class="headline heading-4"><a href="/5433987/guns-common-ground/">Guns Have Divided America. Here’s What Happens When 245 People Try to Meet in the Middle</a></div>
-                <div class="issue-date">Oct 25, 2018</div>
+                <div class="headline heading-4"><a href="/5466497/sebastian-kurz/">Austria's Young Chancellor Sebastian Kurz Is Bringing the Far-Right Into the Mainstream</a></div>
+                <div class="issue-date">Nov 29, 2018</div>
               </li>
           </ul>
           <div class="item-selectors">
@@ -1555,10 +1511,8 @@
                 <label for="carousel-item-1">Go to item 1</label>
                 <input id="carousel-item-2" type="radio" name="item-selector-dots" value=2 >
                 <label for="carousel-item-2">Go to item 2</label>
-                <input id="carousel-item-3" type="radio" name="item-selector-dots" value=3 >
-                <label for="carousel-item-3">Go to item 3</label>
             </nav>
-            <a class='view-issue headline media-heading margin-4-top' href="/magazine/us/5455477/november-26th-2018-vol-192-no-22-u-s/">View Issue &raquo;</a>
+            <a class='view-issue headline media-heading margin-4-top' href="/magazine/us/5472300/december-17th-2018-vol-192-no-25-u-s/">View Issue &raquo;</a>
           </div>
         </div>
     </div>
@@ -1566,9 +1520,9 @@
       <div class="heading-3 column-title">Featured</div>
       <div class="column-tout-container wrap-2-columns">
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/angie-thomas/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/eli/">
               <div class="category heading-eyebrow">
-                Angie Thomas
+                Eli Meixler / Dhaka
               </div>
             </a>
         
@@ -1578,8 +1532,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5457854/michelle-obama-becoming-review/">
-                    Michelle Obama's 'Becoming' Mixes Honesty With Optimism
+                <a href="/5475494/shahidul-alam-bangladesh-journalist-person-of-the-year-2018/">
+                    'Journalism Is Under Threat.' Inside a Bangladeshi Journalist’s Dangerous Journey From Photographer to Prisoner
                 </a>
               </div>
         
@@ -1590,9 +1544,9 @@
           </div>
         </div>
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/sean-sherman/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/laignee-barron/">
               <div class="category heading-eyebrow">
-                Sean Sherman
+                Laignee Barron / Yangon, Myanmar
               </div>
             </a>
         
@@ -1602,8 +1556,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5457183/thanksgiving-native-american-holiday/">
-                    How I Celebrate Thanksgiving as a Native American
+                <a href="/5475493/reuters-journalists-wives-person-of-the-year-2018/">
+                    'Please Have Mercy.' The Wives of Reuters Journalists Jailed in Myanmar Speak Out
                 </a>
               </div>
         
@@ -1614,9 +1568,9 @@
           </div>
         </div>
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/katy-steinmetz/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/jennifer-egan/">
               <div class="category heading-eyebrow">
-                Katy Steinmetz / Chico, Calif.
+                Jennifer Egan
               </div>
             </a>
         
@@ -1626,8 +1580,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5461490/rescued-animals-camp-fire-california/">
-                    Inside the Makeshift Shelter Where Pets Await Their Owners Amid Wildfires
+                <a href="/5475490/writers-truth-democracy-jennifer-egan/">
+                    We Need Writers Now More Than Ever. Our Democracy Depends On It
                 </a>
               </div>
         
@@ -1638,9 +1592,9 @@
           </div>
         </div>
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/viet-thanh-nguyen/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/haley-sweetland-edwards/">
               <div class="category heading-eyebrow">
-                Viet Thanh Nguyen
+                Haley Sweetland Edwards
               </div>
             </a>
         
@@ -1650,8 +1604,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5455490/american-like-me/">
-                    I Love America. That’s Why I Have to Tell the Truth About It
+                <a href="/5476021/christine-blasey-ford-legacy/">
+                    Why Americans Are Still Grappling With Christine Blasey Ford's Legacy
                 </a>
               </div>
         
@@ -1662,9 +1616,9 @@
           </div>
         </div>
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/kamakshi-ayyar/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/vivienne-walt/">
               <div class="category heading-eyebrow">
-                Kamakshi Ayyar
+                Vivienne Walt
               </div>
             </a>
         
@@ -1674,8 +1628,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5458488/international-space-station-20-years-anniversary/">
-                    What We Can Learn From 20 Years of the Space Station 
+                <a href="/5472304/france-yellow-vests-macron-fragile/">
+                    The Yellow Vests Expose How Fragile Emmanuel Macron's Hold on France Really Is
                 </a>
               </div>
         
@@ -1686,9 +1640,9 @@
           </div>
         </div>
         <div class="column-tout  ">
-            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/w-j-hennigan/">
+            <a class="unskinned display-inline-block eyebrow-link margin-4-bottom" href="http://time.com/author/charlie-campbell/">
               <div class="category heading-eyebrow">
-                W.J. Hennigan
+                Charlie Campbell / Lijiang
               </div>
             </a>
         
@@ -1698,8 +1652,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5455702/what-life-is-like-for-the-thousands-of-troops-at-the-border-who-are-waiting-with-no-enemy-to-fight/">
-                    What Life Is Like for the Thousands of Troops at the Border Who Are Waiting With No Enemy to Fight
+                <a href="/5475127/huawei-meng-wanzhou-arrest/">
+                    Why Arrest of Huawei CFO Is Such a Big Deal
                 </a>
               </div>
         
@@ -1721,12 +1675,12 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462653/dolce-gabbana-apology-insensitive-china-ads/">
-                        Dolce &amp; Gabbana Issue Apology After Chinese Adverts Backlash
+                    <a href="/5477537/france-hunts-terror-suspect-strasbourg/">
+                        France Hunts Terror Suspect Who Attacked a Christmas Market
                     </a>
                   </div>
             
-                    <div class="timestamp">Saturday November 24th, 2018</div>
+                    <div class="timestamp">33 minutes ago</div>
             
                 </div>
             
@@ -1741,12 +1695,12 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462698/dog-disappearance-new-york-found-florida/">
-                        Dog Found in Florida After Missing 18 Months From New York
+                    <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/">
+                        Trump Says He'd Intervene in Huawei Case for a Trade Deal
                     </a>
                   </div>
             
-                    <div class="timestamp">Saturday November 24th, 2018</div>
+                    <div class="timestamp">41 minutes ago</div>
             
                 </div>
             
@@ -1761,12 +1715,12 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462672/russia-verify-american-moon-landing/">
-                        Russian Space Agency Official Jokingly Pledges to Verify American Moon Landings
+                    <a href="/5477524/pakistan-response-u-s-religious-freedom-watch-list/">
+                        Pakistan Rejects U.S. Rebuke Over Religious Freedoms
                     </a>
                   </div>
             
-                    <div class="timestamp">Saturday November 24th, 2018</div>
+                    <div class="timestamp">an hour ago</div>
             
                 </div>
             
@@ -1781,12 +1735,12 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462649/charlottesville-trial-set-start/">
-                        Trial Set to Start for Driver in Deadly Charlottesville White Nationalist Rally Crash
+                    <a href="/5477515/jazmine-headley-released-police-video/">
+                        Mother Arrested in Video That Caused Outrage Freed From Jail
                     </a>
                   </div>
             
-                    <div class="timestamp">Saturday November 24th, 2018</div>
+                    <div class="timestamp">Wednesday December 12th, 2018</div>
             
                 </div>
             
@@ -1801,12 +1755,12 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5462624/nicholas-roeg-dies-90/">
-                        Nicholas Roeg British Film Director Dies at Age 90
+                    <a href="/5477505/malaysia-1mdb-scandal-najib-razak-new-charge/">
+                        Malaysia's Ex-PM Slapped With New Charge in 1MDB Scandal
                     </a>
                   </div>
             
-                    <div class="timestamp">Saturday November 24th, 2018</div>
+                    <div class="timestamp">Wednesday December 12th, 2018</div>
             
                 </div>
             
@@ -1815,15 +1769,13 @@
             </div>
     </div>
   </div>
-  
-  
-    <div
-          id="div-gpt-leaderboard-fixed-1"
-          data-tier="2"
-        data-lazy-scroll="true"      
-      class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
-      data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
-  
+    
+      <div
+            id="div-gpt-leaderboard-fixed-1"
+            data-tier="2"
+          data-lazy-scroll="true"      
+        class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
+        data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
   
   
 </div>
@@ -1835,32 +1787,31 @@
       <div class="column">
         <div class="column-tout  ">
         
-            <a href="/longform/guns-america/" class="">
-              <div
-                class="component lazy-image skip-imagesvc marquee_large_2x
-                  
-                  
-                  
-                  "
-                data-src="https://timedotcom.files.wordpress.com/2018/10/time-jr-featured-longform.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                data-alt=""
-                data-title=""
-                data-shop-image="false"
-                
-                
+            <a href="/guns-in-america/" class="">
+                <div
+                  class="component lazy-image skip-imagesvc marquee_large_2x
+                    
+                    
+                    
+                    "
+                  data-src="https://timedotcom.files.wordpress.com/2018/11/time-jr-homepage.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
                 >
                 
                 <noscript>
                   <div class="inner-container">
-                    <img src="https://timedotcom.files.wordpress.com/2018/10/time-jr-featured-longform.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                    <img src="https://timedotcom.files.wordpress.com/2018/11/time-jr-homepage.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                   </div>
                 </noscript>
                 
-                <div class="inner-container js-inner-container">
+                <div class="inner-container js-inner-container ">
                 </div>
                 
                 
-              </div>
+                </div>
             </a>
         
         
@@ -1868,7 +1819,7 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/longform/guns-america/">
+                <a href="/guns-in-america/">
                     TIME Magazine: Guns in America
                 </a>
               </div>
@@ -1884,31 +1835,30 @@
         <div class="column-tout  ">
         
             <a href="/5314430/american-history-moments-matter-today/" class="">
-              <div
-                class="component lazy-image skip-imagesvc marquee_large_2x
-                  
-                  
-                  
-                  "
-                data-src="https://timedotcom.files.wordpress.com/2018/06/gettyimages-183974198.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                data-alt=""
-                data-title=""
-                data-shop-image="false"
-                
-                
+                <div
+                  class="component lazy-image skip-imagesvc marquee_large_2x
+                    
+                    
+                    
+                    "
+                  data-src="https://timedotcom.files.wordpress.com/2018/06/gettyimages-183974198.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
                 >
                 
                 <noscript>
                   <div class="inner-container">
-                    <img src="https://timedotcom.files.wordpress.com/2018/06/gettyimages-183974198.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                    <img src="https://timedotcom.files.wordpress.com/2018/06/gettyimages-183974198.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                   </div>
                 </noscript>
                 
-                <div class="inner-container js-inner-container">
+                <div class="inner-container js-inner-container ">
                 </div>
                 
                 
-              </div>
+                </div>
             </a>
         
         
@@ -1932,31 +1882,30 @@
         <div class="column-tout  ">
         
             <a href="/longform/me-too-asia-china-south-korea/" class="">
-              <div
-                class="component lazy-image skip-imagesvc marquee_large_2x
-                  
-                  
-                  
-                  "
-                data-src="https://timedotcom.files.wordpress.com/2018/10/seo-ji-hyun-south-korea-me-too-facebook.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                data-alt=""
-                data-title=""
-                data-shop-image="false"
-                
-                
+                <div
+                  class="component lazy-image skip-imagesvc marquee_large_2x
+                    
+                    
+                    
+                    "
+                  data-src="https://timedotcom.files.wordpress.com/2018/10/seo-ji-hyun-south-korea-me-too-facebook.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
                 >
                 
                 <noscript>
                   <div class="inner-container">
-                    <img src="https://timedotcom.files.wordpress.com/2018/10/seo-ji-hyun-south-korea-me-too-facebook.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                    <img src="https://timedotcom.files.wordpress.com/2018/10/seo-ji-hyun-south-korea-me-too-facebook.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                   </div>
                 </noscript>
                 
-                <div class="inner-container js-inner-container">
+                <div class="inner-container js-inner-container ">
                 </div>
                 
                 
-              </div>
+                </div>
             </a>
         
         
@@ -2002,8 +1951,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5454447/person-of-the-year-2018-poll/">
-                    Who Should Be TIME's Person of the Year for 2018?
+                <a href="/5476035/crazy-rich-asians-indian-wedding/">
+                    This $100 Million Indian Wedding Will Put <i>Crazy Rich Asians</i> to Shame
                 </a>
               </div>
         
@@ -2022,8 +1971,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/4692326/how-much-sex-is-healthy-in-a-relationship/">
-                    Here’s How Much Sex You Should Have Every Week
+                <a href="/5475492/maria-ressa-rappler-person-of-the-year-2018/">
+                    She Reported From War Zones. But Covering Philippine President Duterte Might Be Her Most Dangerous Job Yet
                 </a>
               </div>
         
@@ -2042,8 +1991,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5462698/dog-disappearance-new-york-found-florida/">
-                    Dog Found in Florida After Missing 18 Months From New York
+                <a href="/5477092/baylor-accuser-angry-plea-bargain/">
+                    Baylor Accuser Lashes Out as Alleged Rapist Receives No Jail Time: 'He Stole My Body'
                 </a>
               </div>
         
@@ -2062,8 +2011,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/4989850/alcohol-foreign-language-speak/">
-                    It's True: Alcohol Helps You Speak a Foreign Language Better
+                <a href="/5475293/trump-fossil-fuels-cop-24-katowice/">
+                    Trump Administration Pitches Coal
                 </a>
               </div>
         
@@ -2082,8 +2031,8 @@
             
             <div class='column-tout-metadata'>
               <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                <a href="/5462563/wisconsin-teens-viral-nazi-salute-photo-first-amendment/">
-                    School Official: 'Nazi Salute' Teens' Speech Is Protected
+                <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/">
+                    Trump Says He'd Intervene in Huawei Case for a Trade Deal
                 </a>
               </div>
         
@@ -2098,32 +2047,31 @@
         <div class="heading-3 column-title  margin-8-bottom ">Rankings</div>
             <div class="column-tout  ">
             
-                <a href="/5267781/best-movies-2018-so-far/" class="">
-                  <div
-                    class="component lazy-image skip-imagesvc marquee_large_2x
-                      
-                      
-                      
-                      "
-                    data-src="https://timedotcom.files.wordpress.com/2018/05/best-movies-so-far-2018.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                    data-alt=""
-                    data-title=""
-                    data-shop-image="false"
-                    
-                    
+                <a href="/5454739/best-movies-2018/" class="">
+                    <div
+                      class="component lazy-image skip-imagesvc marquee_large_2x
+                        
+                        
+                        
+                        "
+                      data-src="https://timedotcom.files.wordpress.com/2018/11/best-movies.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                      data-alt=""
+                      data-title=""
+                      data-shop-image="false"
+                          
                     >
                     
                     <noscript>
                       <div class="inner-container">
-                        <img src="https://timedotcom.files.wordpress.com/2018/05/best-movies-so-far-2018.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                        <img src="https://timedotcom.files.wordpress.com/2018/11/best-movies.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                       </div>
                     </noscript>
                     
-                    <div class="inner-container js-inner-container">
+                    <div class="inner-container js-inner-container ">
                     </div>
                     
                     
-                  </div>
+                    </div>
                 </a>
             
             
@@ -2131,8 +2079,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5267781/best-movies-2018-so-far/">
-                        Best Movies of 2018 So Far
+                    <a href="/5454739/best-movies-2018/">
+                        The 10 Best Movies of 2018
                     </a>
                   </div>
             
@@ -2150,8 +2098,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5275708/best-podcasts-of-2018-so-far/">
-                        Best Podcasts of 2018 So Far
+                    <a href="/5454751/best-tv-shows-2018/">
+                        The 10 Best TV Shows of 2018
                     </a>
                   </div>
             
@@ -2169,8 +2117,8 @@
                 
                 <div class='column-tout-metadata'>
                   <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                    <a href="/5296551/best-albums-2018-so-far/">
-                        Best Albums of 2018 So Far
+                    <a href="/5455075/best-albums-2018/">
+                        The 10 Best Albums of 2018
                     </a>
                   </div>
             
@@ -2186,31 +2134,30 @@
             <div class="column-tout  ">
             
                 <a href="/5402304/friendship-breakups-worse-romantic/" class="">
-                  <div
-                    class="component lazy-image skip-imagesvc marquee_large_2x
-                      
-                      
-                      
-                      "
-                    data-src="https://timedotcom.files.wordpress.com/2018/09/friendship-breakup.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                    data-alt=""
-                    data-title=""
-                    data-shop-image="false"
-                    
-                    
+                    <div
+                      class="component lazy-image skip-imagesvc marquee_large_2x
+                        
+                        
+                        
+                        "
+                      data-src="https://timedotcom.files.wordpress.com/2018/09/friendship-breakup.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                      data-alt=""
+                      data-title=""
+                      data-shop-image="false"
+                          
                     >
                     
                     <noscript>
                       <div class="inner-container">
-                        <img src="https://timedotcom.files.wordpress.com/2018/09/friendship-breakup.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                        <img src="https://timedotcom.files.wordpress.com/2018/09/friendship-breakup.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                       </div>
                     </noscript>
                     
-                    <div class="inner-container js-inner-container">
+                    <div class="inner-container js-inner-container ">
                     </div>
                     
                     
-                  </div>
+                    </div>
                 </a>
             
             
@@ -2278,32 +2225,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5462698/dog-disappearance-new-york-found-florida/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/brown-husky-sinatra-found.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5477515/jazmine-headley-released-police-video/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/ap18346127424271.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/brown-husky-sinatra-found.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/ap18346127424271.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2311,8 +2257,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5462698/dog-disappearance-new-york-found-florida/">
-                      Dog Found in Florida After Missing 18 Months From New York
+                  <a href="/5477515/jazmine-headley-released-police-video/">
+                      Mother Arrested in Video That Caused Outrage Freed From Jail
                   </a>
                 </div>
           
@@ -2332,8 +2278,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462649/charlottesville-trial-set-start/">
-                          Trial Set to Start for Driver in Deadly Charlottesville White Nationalist Rally Crash
+                      <a href="/5477474/california-lawmaker-joaquin-arambula-arrested-child-cruelty/">
+                          California Lawmaker Arrested on Child Cruelty Suspicion
                       </a>
                     </div>
               
@@ -2351,8 +2297,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462604/san-francisco-ferry-boat-docks-crash/">
-                          San Francisco Ferry Boat Crashes Into Docks Twice
+                      <a href="/5477461/california-wildfires-cleanup-3-billion/">
+                          California Wildfires Cleanup to Cost at Least $3 Billion
                       </a>
                     </div>
               
@@ -2370,8 +2316,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462563/wisconsin-teens-viral-nazi-salute-photo-first-amendment/">
-                          School Official: 'Nazi Salute' Teens' Speech Is Protected
+                      <a href="/5477336/stormy-daniels-pay-trump-attorneys-fees/">
+                          Judge Orders Stormy Daniels to Pay President Trump Nearly $293K in Attorneys' Fees Over Failed Defamation Case
                       </a>
                     </div>
               
@@ -2389,8 +2335,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462520/fox-news-apologizes-hillary-clinton-herpes/">
-                          Fox News Host Apologizes After Guest Compares Hillary Clinton to Herpes
+                      <a href="/5477092/baylor-accuser-angry-plea-bargain/">
+                          Baylor Accuser Lashes Out as Alleged Rapist Receives No Jail Time: 'He Stole My Body'
                       </a>
                     </div>
               
@@ -2410,32 +2356,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5462612/nancy-pelosi-democrats-support-leader/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/nancy-pelosi-leadership.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1069437388.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/nancy-pelosi-leadership.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/gettyimages-1069437388.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2443,8 +2388,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5462612/nancy-pelosi-democrats-support-leader/">
-                      Nancy Pelosi Urges Democrats to Support Her as Leader
+                  <a href="/5477529/intervene-donald-trump-huawei-cfo-trade-deal/">
+                      Trump Says He'd Intervene in Huawei Case for a Trade Deal
                   </a>
                 </div>
           
@@ -2464,8 +2409,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462519/trump-administration-supreme-court-transgender-people-military-service/">
-                          Trump Asks Supreme Court to Rule on Transgender Military Ban
+                      <a href="/5477483/michael-flynn-requests-no-prison-time/">
+                          Flynn Seeks to Avoid Prison Time in Russia Investigation
                       </a>
                     </div>
               
@@ -2483,8 +2428,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462136/hillary-clinton-europe-immigraiton-populists/">
-                          Hillary Clinton Warns Europe to 'Get a Handle' on Immigration
+                      <a href="/5477464/donald-trump-interview-impeachment-revolt/">
+                          Trump Says 'People Would Revolt' if He Were Impeached
                       </a>
                     </div>
               
@@ -2502,8 +2447,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462128/donald-trump-disputes-cia-saudi-prince-khashoggi/">
-                          Trump Disputes CIA's Khashoggi Claim
+                      <a href="/5477417/huawei-cfo-bail-us-extradition/">
+                          Huawei CFO Granted $7.5 Million Bail
                       </a>
                     </div>
               
@@ -2521,8 +2466,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462085/comey-congress-interview-subpoena-house-republicans/">
-                          James Comey Resists Closed-Door Congress Interview After Being Subpoenaed by House Republicans
+                      <a href="/5476903/donald-trump-shutdown-border-wall/">
+                          Trump Makes Threat Over Border Wall Funding
                       </a>
                     </div>
               
@@ -2537,15 +2482,13 @@
           </div>
         </div>
       </div>
-        
-        
-          <div
-                id="div-gpt-leaderboard-fixed-2"
-                data-tier="3"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
-            data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-leaderboard-fixed-2"
+                  data-tier="3"
+                data-lazy-scroll="true"      
+              class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
+              data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
         
         
       <div class="heading-3">World</div>
@@ -2553,32 +2496,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5462653/dolce-gabbana-apology-insensitive-china-ads/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/gettyimages-1070901448.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5477537/france-hunts-terror-suspect-strasbourg/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/ap18346109184170.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/gettyimages-1070901448.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/ap18346109184170.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2586,8 +2528,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5462653/dolce-gabbana-apology-insensitive-china-ads/">
-                      Dolce &amp; Gabbana Issue Apology After Chinese Adverts Backlash
+                  <a href="/5477537/france-hunts-terror-suspect-strasbourg/">
+                      France Hunts Terror Suspect Who Attacked a Christmas Market
                   </a>
                 </div>
           
@@ -2607,8 +2549,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462624/nicholas-roeg-dies-90/">
-                          Nicholas Roeg British Film Director Dies at Age 90
+                      <a href="/5477524/pakistan-response-u-s-religious-freedom-watch-list/">
+                          Pakistan Rejects U.S. Rebuke Over Religious Freedoms
                       </a>
                     </div>
               
@@ -2626,8 +2568,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462594/nuns-urge-sisters-report-sexual-abuse/">
-                          Catholic Nuns Urge Sisters Everywhere to Report Sexual Abuse
+                      <a href="/5477505/malaysia-1mdb-scandal-najib-razak-new-charge/">
+                          Malaysia's Ex-PM Slapped With New Charge in 1MDB Scandal
                       </a>
                     </div>
               
@@ -2645,8 +2587,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462579/taiwans-ruling-party-defeated-local-elections/">
-                          Local Taiwan Elections Give Major Defeat to Ruling Party
+                      <a href="/5477482/starsbourg-christmas-market-attack/">
+                          3 Dead After an Attack Near a French Christmas Market
                       </a>
                     </div>
               
@@ -2664,8 +2606,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5462569/brexit-deal-spain-support-gibraltar-terms/">
-                          Brexit Deal Gains Spain's Support After U.K. Agrees to Gibraltar Terms
+                      <a href="/5477187/shooting-strasbourg-france/">
+                          4 Dead, 11 Injured in Strasbourg, France Shooting
                       </a>
                     </div>
               
@@ -2685,32 +2627,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5457183/thanksgiving-native-american-holiday/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/thanksgiving-native-american-food.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5476021/christine-blasey-ford-legacy/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/ford.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/thanksgiving-native-american-food.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/ford.jpeg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2718,8 +2659,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5457183/thanksgiving-native-american-holiday/">
-                      How I Celebrate Thanksgiving as a Native American
+                  <a href="/5476021/christine-blasey-ford-legacy/">
+                      Why Americans Are Still Grappling With Christine Blasey Ford's Legacy
                   </a>
                 </div>
           
@@ -2739,8 +2680,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5457854/michelle-obama-becoming-review/">
-                          Michelle Obama's 'Becoming' Mixes Honesty With Optimism
+                      <a href="/5475979/alianza-letter-2018/">
+                          How Women Across Industries Are Finding Their Voice in the Fight Against Sexual Harassment
                       </a>
                     </div>
               
@@ -2758,8 +2699,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5456015/gun-control-background-checks-ar15-mass-shootings/">
-                          It's Going to Take More Than Background Checks and AR-15 Bans to Stop Mass Shootings
+                      <a href="/5475966/silence-breakers-2018/">
+                          What Still Needs to Be Done to Break the Silence Surrounding Sexual Harassment
                       </a>
                     </div>
               
@@ -2777,8 +2718,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5456903/why-we-dream-alice-robb/">
-                          People Say It's Boring to Talk About a Dream You Had. Here's Why You Should Do It Anyway
+                      <a href="/5475490/writers-truth-democracy-jennifer-egan/">
+                          We Need Writers Now More Than Ever. Our Democracy Depends On It
                       </a>
                     </div>
               
@@ -2796,8 +2737,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5456025/make-friends-middle-age-men-masculinity/">
-                          How to Make Friends as a Middle-Aged Man, Even If the Idea Makes You Feel Weird
+                      <a href="/5473969/mary-robinson-un-migration-compact-marrakesh/">
+                          Mary Robinson: Stop Scaremongering About the Essential UN Migration Pact
                       </a>
                     </div>
               
@@ -2812,15 +2753,13 @@
           </div>
         </div>
       </div>
-        
-        
-          <div
-                id="div-gpt-leaderboard-fixed-3"
-                data-tier="4"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
-            data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-leaderboard-fixed-3"
+                  data-tier="4"
+                data-lazy-scroll="true"      
+              class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
+              data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
         
         
       <div class="heading-3">Health</div>
@@ -2828,32 +2767,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5462345/thanksgiving-leftovers-tips/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/thanksgiving-leftovers.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5475905/harm-reduction-resources/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/09/heroin-syringes.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/thanksgiving-leftovers.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/09/heroin-syringes.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2861,8 +2799,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5462345/thanksgiving-leftovers-tips/">
-                      Here's How Long You Can Safely Keep Eating Your Thanksgiving Leftovers
+                  <a href="/5475905/harm-reduction-resources/">
+                      A Promising Way to Help Drug Users Is ‘Severely Lacking’ Around the World, Report Says
                   </a>
                 </div>
           
@@ -2882,8 +2820,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461594/romaine-lettuce-cdc-e-coli-contamination/">
-                          Here's Why the CDC Wants You to Throw Away All Your Romaine Lettuce
+                      <a href="/5475726/human-fetal-tissue-research/">
+                          The NIH Says It Will Spend Up to $20 Million to Find Alternatives to Human Fetal Tissue
                       </a>
                     </div>
               
@@ -2901,8 +2839,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461616/abortions-lowest-rate-cdc/">
-                          Number of U.S. Abortions Hits Lowest Rate Since Roe v. Wade, CDC Reports
+                      <a href="/5474432/drawing-helps-boost-memory/">
+                          Always Forgetting Important Things? Here’s How to Fix That, According to Science
                       </a>
                     </div>
               
@@ -2920,8 +2858,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461175/college-freshman-dies-adenovirus-7/">
-                          College Student Dies of Same Virus That Killed NJ Kids
+                      <a href="/5476640/jimmy-dean-sausage-recall/">
+                          Metal Contamination Forces Jimmy Dean Sausage Recall
                       </a>
                     </div>
               
@@ -2939,8 +2877,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5460632/meth-hospitalizations-opioids/">
-                          Opioids Are In the Spotlight. But Meth Hospitalizations Are Surging
+                      <a href="/5473884/are-neti-pots-safe/">
+                          A Doctor Says a Woman Died From a Brain-Eating Amoeba After Using a Neti Pot. Are They Safe?
                       </a>
                     </div>
               
@@ -2960,32 +2898,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5458703/dirty-john-tv-review/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/11/connie-britton-bravo-dirty-john-review.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5476814/kathie-lee-gifford-leaving-today-show/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/kathie-lee-hoda-today-show.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/11/connie-britton-bravo-dirty-john-review.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/kathie-lee-hoda-today-show.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -2993,8 +2930,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5458703/dirty-john-tv-review/">
-                      TV’s Take on the Hit Podcast <i>Dirty John</i> Is a Dirty Shame
+                  <a href="/5476814/kathie-lee-gifford-leaving-today-show/">
+                      Kathie Lee Gifford Tearfully Announces Today Show Exit
                   </a>
                 </div>
           
@@ -3014,8 +2951,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5460581/at-eternitys-gate-true-story/">
-                          The True Story Behind the Vincent van Gogh Biopic <i>At Eternity's Gate</i>
+                      <a href="/person-of-the-year-2018-ryan-coogler-runner-up/">
+                          Ryan Coogler
                       </a>
                     </div>
               
@@ -3033,8 +2970,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5460237/review-creed-ii-michael-b-jordan/">
-                          Review: <i>Creed II</i> Gets the Job Done—But Can't KO the Memory of Its Predecessor
+                      <a href="/5471470/best-christmas-books/">
+                          The 16 Best Christmas Books to Read This Holiday Season
                       </a>
                     </div>
               
@@ -3052,8 +2989,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5444300/best-stand-up-2018/">
-                          The Top 10 Stand Up Comedy Specials of 2018
+                      <a href="/5463609/best-tv-episodes-2018/">
+                          The 10 Best TV Episodes of 2018
                       </a>
                     </div>
               
@@ -3071,8 +3008,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5455070/best-podcasts-2018-2/">
-                          The Top 10 Podcasts of 2018
+                      <a href="/5473365/mary-queen-of-scots-true-story/">
+                          The True Story Behind <i>Mary Queen of Scots</i>
                       </a>
                     </div>
               
@@ -3087,15 +3024,13 @@
           </div>
         </div>
       </div>
-        
-        
-          <div
-                id="div-gpt-leaderboard-fixed-4"
-                data-tier="1"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
-            data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-leaderboard-fixed-4"
+                  data-tier="1"
+                data-lazy-scroll="true"      
+              class="ad ad-container ad-wrapper type-728x90 desktop-only karma-ad"
+              data-dimensions="728x90" role="complementary" aria-hidden="true"></div>
         
         
       <div class="heading-3">Tech</div>
@@ -3103,32 +3038,31 @@
         <div class="rundown-item-column">
           <div class="column-tout  ">
           
-              <a href="/5461910/facebook-exec-hiring-opposition-firm/" class="">
-                <div
-                  class="component lazy-image skip-imagesvc marquee_large_2x
-                    
-                    
-                    
-                    "
-                  data-src="https://timedotcom.files.wordpress.com/2018/07/gettyimages-971974530.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
-                  data-alt=""
-                  data-title=""
-                  data-shop-image="false"
-                  
-                  
+              <a href="/5477049/google-transparency-house-hearing/" class="">
+                  <div
+                    class="component lazy-image skip-imagesvc marquee_large_2x
+                      
+                      
+                      
+                      "
+                    data-src="https://timedotcom.files.wordpress.com/2018/12/google-house-hearing.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1"
+                    data-alt=""
+                    data-title=""
+                    data-shop-image="false"
+                        
                   >
                   
                   <noscript>
                     <div class="inner-container">
-                      <img src="https://timedotcom.files.wordpress.com/2018/07/gettyimages-971974530.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="">
+                      <img src="https://timedotcom.files.wordpress.com/2018/12/google-house-hearing.jpg?quality&#x3D;85&amp;w&#x3D;550&amp;h&#x3D;367&amp;crop&#x3D;1" alt="" title="">
                     </div>
                   </noscript>
                   
-                  <div class="inner-container js-inner-container">
+                  <div class="inner-container js-inner-container ">
                   </div>
                   
                   
-                </div>
+                  </div>
               </a>
           
           
@@ -3136,8 +3070,8 @@
               
               <div class='column-tout-metadata'>
                 <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                  <a href="/5461910/facebook-exec-hiring-opposition-firm/">
-                      Outgoing Facebook Exec Takes Fall for Hiring Opposition Firm
+                  <a href="/5477049/google-transparency-house-hearing/">
+                      Google's Biggest Problem? It Can Never Be as Transparent as We Need It to Be
                   </a>
                 </div>
           
@@ -3157,8 +3091,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461883/google-black-friday-deals/">
-                          These Are Google's Best Black Friday Deals
+                      <a href="/5474743/spacex-international-space-station-christmas-gifts/">
+                          SpaceX Christmas Gifts Arrive at the International Space Station
                       </a>
                     </div>
               
@@ -3176,8 +3110,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461815/amazon-black-friday-deals-tech/">
-                          Amazon's Black Friday Tech Deals Are Full of Stocking Stuffers
+                      <a href="/5473979/super-smash-bros-ultimate-switch-review/">
+                          Review: <em>Super Smash Bros. Ultimate</em> Is Great for Hardcore Fans and Newbies Alike
                       </a>
                     </div>
               
@@ -3195,8 +3129,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461462/windows-surface-xbox-black-friday-deals/">
-                          Microsoft's Black Friday Deals Are a Gamer's Dream
+                      <a href="/5469266/the-best-gifts-above-500-to-give-this-holiday-season/">
+                          The Best Gifts Above $500 To Give This Holiday Season
                       </a>
                     </div>
               
@@ -3214,8 +3148,8 @@
                   
                   <div class='column-tout-metadata'>
                     <div class="headline heading-3 heading-content margin-8-bottom media-heading">
-                      <a href="/5461065/facebook-mark-zuckerberg-sheryl-sandberg/">
-                          Mark Zuckerberg Says He Wants to Work With Sheryl Sandberg for Decades
+                      <a href="/5469263/best-gifts-between-250-500/">
+                          The Best Gifts Between $250-$500 to Give This Holiday Season
                       </a>
                     </div>
               
@@ -3232,102 +3166,92 @@
       </div>
   </div>
   <div class="rundown-sidebar">
+          
+            <div
+                  id="div-gpt-square-fixed-2"
+                  data-tier="2"
+                data-lazy-scroll="true"      
+              class="ad ad-container ad-wrapper type-300x250 desktop-ad tablet-ad karma-ad"
+              data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
         
-        
-          <div
-                id="div-gpt-square-fixed-2"
-                data-tier="2"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-300x250 desktop-ad tablet-ad karma-ad"
-            data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
-        
-        
+            
+              <div
+                    id="div-gpt-mob-square-fixed-2"
+                    data-tier="2"
+                  data-lazy-scroll="true"      
+                class="ad ad-container ad-wrapper  mobile-ad karma-ad"
+                data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
           
           
             <div
-                  id="div-gpt-mob-square-fixed-2"
-                  data-tier="2"
+                  id="div-gpt-square-fixed-3"
+                  data-tier="3"
                 data-lazy-scroll="true"      
-              class="ad ad-container ad-wrapper  mobile-ad karma-ad"
+              class="ad ad-container ad-wrapper type-300x250 desktop-ad tablet-ad karma-ad"
               data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
-          
-          
-        
-        
-          <div
-                id="div-gpt-square-fixed-3"
-                data-tier="3"
-              data-lazy-scroll="true"      
-            class="ad ad-container ad-wrapper type-300x250 desktop-ad tablet-ad karma-ad"
-            data-dimensions="300x250" role="complementary" aria-hidden="true"></div>
-        
         
   </div>
 </div>
 
-        
-        
-          <div
-                id="div-gpt-related"
-                data-tier="1"
-                    
-            class="ad ad-container ad-wrapper type-gum-gum desktop-ad tablet-ad karma-ad"
-            data-dimensions="1x6" role="complementary" aria-hidden="true"></div>
-        
+          
+            <div
+                  id="div-gpt-related"
+                  data-tier="1"
+                      
+              class="ad ad-container ad-wrapper type-gum-gum desktop-ad tablet-ad karma-ad"
+              data-dimensions="1x6" role="complementary" aria-hidden="true"></div>
         
       <div class="above-footer">
           <div class="component subscribe-callout media">
             <div class="media-img">
-              <div
-                class="component lazy-image evergreen-cover 
-                  
-                  
-                   skip-imagesvc 
-                  "
-                data-src="//subscription-assets.timeinc.com/current/1850_top2_205_thumb.jpg"
-                data-alt=""
-                data-title=""
-                data-shop-image="false"
-                
-                
+                <div
+                  class="component lazy-image evergreen-cover 
+                    
+                    
+                     skip-imagesvc 
+                    "
+                  data-src="//subscription-assets.timeinc.com/current/1850_top2_205_thumb.jpg"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
                 >
                 
                 <noscript>
                   <div class="inner-container">
-                    <img src="//subscription-assets.timeinc.com/current/1850_top2_205_thumb.jpg" alt="">
+                    <img src="//subscription-assets.timeinc.com/current/1850_top2_205_thumb.jpg" alt="" title="">
                   </div>
                 </noscript>
                 
-                <div class="inner-container js-inner-container">
+                <div class="inner-container js-inner-container ">
                 </div>
                 
                 
-              </div>
-              <div
-                class="component lazy-image latest-cover 
-                  
-                  
-                   skip-imagesvc 
-                  "
-                data-src="//subscription-assets.timeinc.com/current/1850_top1_205_thumb.jpg"
-                data-alt=""
-                data-title=""
-                data-shop-image="false"
-                
-                
+                </div>
+                <div
+                  class="component lazy-image latest-cover 
+                    
+                    
+                     skip-imagesvc 
+                    "
+                  data-src="//subscription-assets.timeinc.com/current/1850_top1_205_thumb.jpg"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
                 >
                 
                 <noscript>
                   <div class="inner-container">
-                    <img src="//subscription-assets.timeinc.com/current/1850_top1_205_thumb.jpg" alt="">
+                    <img src="//subscription-assets.timeinc.com/current/1850_top1_205_thumb.jpg" alt="" title="">
                   </div>
                 </noscript>
                 
-                <div class="inner-container js-inner-container">
+                <div class="inner-container js-inner-container ">
                 </div>
                 
                 
-              </div>
+                </div>
             </div>
             <div class="media-body">
               <div class="partial tout">
@@ -3336,47 +3260,46 @@
                   <div class="tout-content">Subscribe today and save up to 84% off the cover price.</div>
                 </div>
                     <div class="button-style">
-                      <a href="/subscribe-body-time"  target="_blank" > SUBSCRIBE NOW </a>
+                        <a href="/subscribe-body-time"  target="_blank" > SUBSCRIBE NOW </a>
                     </div>
               </div>
             </div>
           </div>
-        <div class="component newsletter-callout " >
-            <div
-              class="component lazy-image  
+          <div class="component newsletter-callout " >
+                <div
+                  class="component lazy-image  
+                    
+                    
+                    
+                    "
+                  data-src="https://timedotcom.files.wordpress.com/2017/09/time-newsletter-tout-footer.png"
+                  data-alt=""
+                  data-title=""
+                  data-shop-image="false"
+                      
+                >
                 
+                <noscript>
+                  <div class="inner-container">
+                    <img src="https://timedotcom.files.wordpress.com/2017/09/time-newsletter-tout-footer.png" alt="" title="">
+                  </div>
+                </noscript>
                 
-                
-                "
-              data-src="https://timedotcom.files.wordpress.com/2017/09/time-newsletter-tout-footer.png"
-              data-alt=""
-              data-title=""
-              data-shop-image="false"
-              
-              
-              >
-              
-              <noscript>
-                <div class="inner-container">
-                  <img src="https://timedotcom.files.wordpress.com/2017/09/time-newsletter-tout-footer.png" alt="">
+                <div class="inner-container js-inner-container ">
                 </div>
-              </noscript>
-              
-              <div class="inner-container js-inner-container">
+                
+                
+                </div>
+            <div class="partial tout">
+              <div class="tout-content-wrapper">
+                <h3>Sign Up for Our Newsletters</h3>
+                <div class="tout-content">Sign up to receive the top stories you need to know now on politics, health, money and more</div>
               </div>
-              
-              
+                  <div class="button-style">
+                      <a href="https://pages.email.time.com/newsletters/?source&#x3D;TD_CMS_HP_Footer"  target="_blank" > SUBSCRIBE </a>
+                  </div>
             </div>
-          <div class="partial tout">
-            <div class="tout-content-wrapper">
-              <h3>Sign Up for Our Newsletters</h3>
-              <div class="tout-content">Sign up to receive the top stories you need to know now on politics, health, money and more</div>
-            </div>
-                <div class="button-style">
-                  <a href="https://pages.email.time.com/newsletters/?source&#x3D;TD_CMS_HP_Footer"  target="_blank" > SUBSCRIBE </a>
-                </div>
           </div>
-        </div>
       </div>
       <footer class="main padding-24-top ">
         <div class="logo-container margin-0-auto">
@@ -3394,9 +3317,7 @@
                   aria-label="Share on undefined"
                 >
             
-            
-              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.258-6.693 14.95-14.95 14.95S3.05 26.26 3.05 18 9.742 3.05 18 3.05 32.95 9.74 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M19.718 13.698c.433-.014.866-.004 1.3-.004h.18V11.57c-.232-.023-.473-.054-.716-.065-.445-.02-.89-.04-1.336-.03-.68.013-1.323.17-1.884.55-.644.435-.998 1.05-1.132 1.773-.057.3-.07.607-.08.912-.01.477-.002.953 0 1.43v.18h-2.16v2.373h2.147v5.966h2.622V18.7h2.134l.33-2.385h-.482c-.608.002-2.004 0-2.004 0s.006-1.177.02-1.687c.02-.7.46-.912 1.057-.932" fill="#B7B4B4"/></g></svg>
-            
+              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.258-6.693 14.95-14.95 14.95S3.05 26.26 3.05 18 9.742 3.05 18 3.05 32.95 9.74 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M19.718 13.698c.433-.014.866-.004 1.3-.004h.18V11.57c-.232-.023-.473-.054-.716-.065-.445-.02-.89-.04-1.336-.03-.68.013-1.323.17-1.884.55-.644.435-.998 1.05-1.132 1.773-.057.3-.07.607-.08.912-.01.477-.002.953 0 1.43v.18h-2.16v2.373h2.147v5.966h2.622V18.7h2.134l.33-2.385h-.482c-.608.002-2.004 0-2.004 0s.006-1.177.02-1.687c.02-.7.46-.912 1.057-.932" fill="#B7B4B4"/></g></svg>
             
                 </a>
             </span>
@@ -3410,9 +3331,7 @@
                   aria-label="Share on undefined"
                 >
             
-            
-              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.257-6.693 14.95-14.95 14.95S3.05 26.258 3.05 18 9.742 3.05 18 3.05 32.95 9.742 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M22.624 22c0 .344-.28.624-.623.624h-8.47c-.342 0-.62-.28-.62-.623v-5.13h1.218c-.07.29-.104.59-.104.9 0 2.07 1.677 3.75 3.75 3.75 2.07 0 3.75-1.68 3.75-3.75 0-.306-.038-.604-.108-.89h1.22V22zm-7.137-5.13c.356-.907 1.24-1.552 2.274-1.552 1.04 0 1.92.645 2.28 1.553.11.28.17.58.17.9 0 1.347-1.1 2.444-2.44 2.444-1.345 0-2.442-1.097-2.442-2.443 0-.314.06-.615.17-.89zm4.916-3.576c0-.19.154-.344.344-.344h1.49c.19 0 .344.154.344.344v1.49c0 .19-.15.344-.34.344h-1.49c-.19 0-.34-.154-.34-.344v-1.49zM22 11.592h-8.478c-1.065 0-1.93.865-1.93 1.93v8.48c0 1.064.865 1.93 1.93 1.93h8.48c1.065 0 1.93-.866 1.93-1.93v-8.48c0-1.065-.865-1.93-1.93-1.93z" fill="#B7B4B4"/></g></svg>
-            
+              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.95 18c0 8.257-6.693 14.95-14.95 14.95S3.05 26.258 3.05 18 9.742 3.05 18 3.05 32.95 9.742 32.95 18" stroke-width="2" stroke="#B7B4B4"/><path d="M22.624 22c0 .344-.28.624-.623.624h-8.47c-.342 0-.62-.28-.62-.623v-5.13h1.218c-.07.29-.104.59-.104.9 0 2.07 1.677 3.75 3.75 3.75 2.07 0 3.75-1.68 3.75-3.75 0-.306-.038-.604-.108-.89h1.22V22zm-7.137-5.13c.356-.907 1.24-1.552 2.274-1.552 1.04 0 1.92.645 2.28 1.553.11.28.17.58.17.9 0 1.347-1.1 2.444-2.44 2.444-1.345 0-2.442-1.097-2.442-2.443 0-.314.06-.615.17-.89zm4.916-3.576c0-.19.154-.344.344-.344h1.49c.19 0 .344.154.344.344v1.49c0 .19-.15.344-.34.344h-1.49c-.19 0-.34-.154-.34-.344v-1.49zM22 11.592h-8.478c-1.065 0-1.93.865-1.93 1.93v8.48c0 1.064.865 1.93 1.93 1.93h8.48c1.065 0 1.93-.866 1.93-1.93v-8.48c0-1.065-.865-1.93-1.93-1.93z" fill="#B7B4B4"/></g></svg>
             
                 </a>
             </span>
@@ -3426,9 +3345,7 @@
                   aria-label="Share on undefined"
                 >
             
-            
-              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.977 18c0 8.272-6.705 14.976-14.977 14.976S3.023 26.272 3.023 18C3.023 9.728 9.728 3.024 18 3.024S32.977 9.728 32.977 18" stroke-width="2" stroke="#B7B4B4"/><path d="M15.783 21.476c-1.48-.052-2.404-1.114-2.65-1.976.413.078.82.063 1.222-.037.01-.002.02-.01.04-.018-.8-.187-1.42-.616-1.848-1.307-.286-.46-.422-.962-.418-1.514.4.214.81.333 1.26.345-.607-.44-1.01-1.01-1.177-1.73-.164-.73-.057-1.42.306-2.07 1.54 1.813 3.492 2.81 5.872 2.973-.02-.113-.037-.21-.048-.31-.08-.67.054-1.295.416-1.86.454-.71 1.1-1.15 1.93-1.29.96-.156 1.796.117 2.495.795.046.045.085.06.15.045.586-.125 1.14-.335 1.657-.635l.04-.02h.02c-.225.664-.635 1.174-1.22 1.55.553-.06 1.08-.206 1.586-.426l.01.013c-.11.143-.215.29-.327.427-.302.373-.65.7-1.035.984-.034.025-.05.05-.05.09.016.424 0 .846-.053 1.266-.11.885-.352 1.73-.73 2.534-.39.833-.9 1.585-1.54 2.246-1.083 1.12-2.39 1.844-3.912 2.18-.52.115-1.05.173-1.585.19-1.64.046-3.16-.36-4.554-1.224l-.066-.043c.996.107 1.94-.02 2.85-.393.484-.197.93-.457 1.354-.79" fill="#B7B4B4"/></g></svg>
-            
+              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.977 18c0 8.272-6.705 14.976-14.977 14.976S3.023 26.272 3.023 18C3.023 9.728 9.728 3.024 18 3.024S32.977 9.728 32.977 18" stroke-width="2" stroke="#B7B4B4"/><path d="M15.783 21.476c-1.48-.052-2.404-1.114-2.65-1.976.413.078.82.063 1.222-.037.01-.002.02-.01.04-.018-.8-.187-1.42-.616-1.848-1.307-.286-.46-.422-.962-.418-1.514.4.214.81.333 1.26.345-.607-.44-1.01-1.01-1.177-1.73-.164-.73-.057-1.42.306-2.07 1.54 1.813 3.492 2.81 5.872 2.973-.02-.113-.037-.21-.048-.31-.08-.67.054-1.295.416-1.86.454-.71 1.1-1.15 1.93-1.29.96-.156 1.796.117 2.495.795.046.045.085.06.15.045.586-.125 1.14-.335 1.657-.635l.04-.02h.02c-.225.664-.635 1.174-1.22 1.55.553-.06 1.08-.206 1.586-.426l.01.013c-.11.143-.215.29-.327.427-.302.373-.65.7-1.035.984-.034.025-.05.05-.05.09.016.424 0 .846-.053 1.266-.11.885-.352 1.73-.73 2.534-.39.833-.9 1.585-1.54 2.246-1.083 1.12-2.39 1.844-3.912 2.18-.52.115-1.05.173-1.585.19-1.64.046-3.16-.36-4.554-1.224l-.066-.043c.996.107 1.94-.02 2.85-.393.484-.197.93-.457 1.354-.79" fill="#B7B4B4"/></g></svg>
             
                 </a>
             </span>
@@ -3442,14 +3359,12 @@
                   aria-label="Share on undefined"
                 >
             
-            
-              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.976 18c0 8.272-6.705 14.976-14.976 14.976-8.27 0-14.976-6.704-14.976-14.976C3.024 9.728 9.73 3.024 18 3.024S32.976 9.728 32.976 18" stroke-width="2" stroke="#B7B4B4"/><path d="M17.162 20.54c-.012.038-.022.072-.03.105-.505 1.976-.562 2.415-1.08 3.332-.247.437-.525.85-.834 1.246-.034.044-.067.102-.137.088-.07-.01-.08-.08-.08-.14-.08-.6-.13-1.2-.11-1.81.03-.79.13-1.06 1.15-5.34.02-.06 0-.12-.02-.18-.24-.65-.29-1.32-.08-2 .46-1.46 2.12-1.57 2.41-.36.18.75-.292 1.72-.654 3.16-.3 1.19 1.1 2.04 2.298 1.17 1.106-.8 1.534-2.72 1.45-4.08-.16-2.71-3.13-3.29-5.02-2.42-2.16 1-2.65 3.68-1.675 4.91.126.157.22.25.18.41-.06.244-.117.49-.186.735-.05.184-.2.25-.384.175-.36-.148-.66-.377-.9-.678-.83-1.026-1.07-3.057.03-4.776 1.212-1.906 3.47-2.676 5.534-2.443 2.468.28 4.02 1.964 4.316 3.873.13.87.035 3.012-1.186 4.53-1.404 1.74-3.68 1.854-4.73.785-.08-.08-.146-.18-.225-.272" fill="#B7B4B4"/></g></svg>
-            
+              <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" tabindex="-1"><g fill-rule="evenodd" fill="none" stroke="null"><path d="M32.976 18c0 8.272-6.705 14.976-14.976 14.976-8.27 0-14.976-6.704-14.976-14.976C3.024 9.728 9.73 3.024 18 3.024S32.976 9.728 32.976 18" stroke-width="2" stroke="#B7B4B4"/><path d="M17.162 20.54c-.012.038-.022.072-.03.105-.505 1.976-.562 2.415-1.08 3.332-.247.437-.525.85-.834 1.246-.034.044-.067.102-.137.088-.07-.01-.08-.08-.08-.14-.08-.6-.13-1.2-.11-1.81.03-.79.13-1.06 1.15-5.34.02-.06 0-.12-.02-.18-.24-.65-.29-1.32-.08-2 .46-1.46 2.12-1.57 2.41-.36.18.75-.292 1.72-.654 3.16-.3 1.19 1.1 2.04 2.298 1.17 1.106-.8 1.534-2.72 1.45-4.08-.16-2.71-3.13-3.29-5.02-2.42-2.16 1-2.65 3.68-1.675 4.91.126.157.22.25.18.41-.06.244-.117.49-.186.735-.05.184-.2.25-.384.175-.36-.148-.66-.377-.9-.678-.83-1.026-1.07-3.057.03-4.776 1.212-1.906 3.47-2.676 5.534-2.443 2.468.28 4.02 1.964 4.316 3.873.13.87.035 3.012-1.186 4.53-1.404 1.74-3.68 1.854-4.73.785-.08-.08-.146-.18-.225-.272" fill="#B7B4B4"/></g></svg>
             
                 </a>
             </span>
         </div>
-        <nav class="footer-links margin-0-auto padding-16-tb rule-bottom" data-tracking-zone="footer">
+        <nav class="footer-links margin-0-auto padding-16-tb rule-bottom" data-tracking-zone="footer" aria-label="Footer Navigation">
           <section>
             <a href=""></a>
             <ul class="margin-8-top">
@@ -3514,7 +3429,6 @@
     <div id="page-segment-values">
       <div class="keyvals"
           data-content_author_name=""
-          data-content_cms_desk=""
           data-content_cms_category="homepage"
           data-content_cms_sub_category=""
           data-content_cms_id="5232653"
@@ -3530,9 +3444,10 @@
           data-referrer=""
           data-search=""
           data-content_is_post="index"
-          data-time_inc_application="front end"
-          data-time_inc_brand="time.com"
           data-title="TIME Homepage"
+          data-affiliate_link_count="0"
+          data-time_inc_brand="time.com"
+          data-time_inc_application="front end"
           data-content_syndicated="false"
           data-content_syndicated_brand=""
           data-content_syndicated_url=""
@@ -3547,9 +3462,11 @@
       <div id="site-components"
         data-brand-sync=""
         data-brand-async="lead-gen,promotional-banner,magazine-carousel"
-        data-core-sync="navigation,lazy-image,overlay,popup,auth,line-clamp,gdpr"
-        data-core-async="video,feed,gallery,gallery-test,docked-sharebar,gallery-view-all,gallery-everything-in,dropdown,autofill-content-container,expander,outbrain,newsletter-signup-modal,vertical-gallery,search-results-form,embed-playbuzz,embed-rakuten,embed-thinglink,aside,pinterest-board,pinterest-pin,topic-sub-nav,embed-facebook,embed-instagram,embed-twitter,build-a-meal,ecommerce-hub,content-loader,before-after,burst-text,bucket,progress-bar,amazon-price,embed-brandpulse,image-zoom,embed-apester,glossary-header,embed-omnivirt,map-overlay,tabs,recirculation,share-new,circular-countdown,auto-advance,navigation-test,footer-test"
+        data-core-sync="navigation,lazy-image,overlay,popup,line-clamp,gdpr,atg,auth"
+        data-core-async="video,feed,gallery,gallery-test,docked-sharebar,gallery-view-all,gallery-everything-in,dropdown,autofill-content-container,expander,outbrain,newsletter-signup-modal,vertical-gallery,search-results-form,embed-playbuzz,pinterest-board,pinterest-pin,topic-sub-nav,embed-facebook,embed-instagram,embed-twitter,build-a-meal,ecommerce-hub,content-loader,before-after,burst-text,bucket,progress-bar,amazon-price,image-zoom,embed-apester,glossary-header,embed-omnivirt,map-overlay,tabs,recirculation,share-new,circular-countdown,auto-advance,navigation-test,footer-test,topics-carousel,category-page-videos,category-page-list,recipe-ratings,ugc-reviews,recipe-reviews,recipe-ingredients-new,recipe-instructions-new,print-preview"
       ></div>
+
+
 
   </body>
 </html>
